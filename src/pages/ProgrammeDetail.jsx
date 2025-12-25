@@ -91,7 +91,7 @@ const ProgrammeDetail = () => {
                                     {programme.directors.map((director, index) => (
                                         <div key={index} className="director-card">
                                             <div className="director-avatar">
-                                                {director.image && <img src={director.image} alt={director.name} />}
+                                                {director.image && <img src={director.image} alt={director.name} loading="lazy" />}
                                             </div>
                                             <div className="director-info">
                                                 <h3>{director.name}</h3>
@@ -116,7 +116,7 @@ const ProgrammeDetail = () => {
                                     {programme.faculty.map((faculty, index) => (
                                         <div key={index} className="director-card">
                                             <div className="director-avatar">
-                                                {faculty.image && <img src={faculty.image} alt={faculty.name} />}
+                                                {faculty.image && <img src={faculty.image} alt={faculty.name} loading="lazy" />}
                                             </div>
                                             <div className="director-info">
                                                 <h3>{faculty.name}</h3>
