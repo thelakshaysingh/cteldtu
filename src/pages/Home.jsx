@@ -227,7 +227,7 @@ const Home = () => {
                             >
                                 <Link to={`/programme/${programme.id}`}>
                                     <div className="programme-image">
-                                        <img src={programme.image} alt={programme.title} />
+                                        <img src={programme.image} alt={programme.title} loading="lazy" />
                                         <span className="programme-badge">{programme.provider}</span>
                                     </div>
                                     <div className="programme-body">

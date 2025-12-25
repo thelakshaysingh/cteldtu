@@ -57,7 +57,17 @@
     border-radius: var(--radius-md);
     font-size: 0.85rem;
     font-weight: 600;
-    white-space: nowrap;
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .provider-badge {
+        white-space: nowrap;
+        max-width: none;
+    }
 }
 
 /* Detail Grid */

@@ -37,6 +37,7 @@ const MessageVC = () => {
                                         src="/images/faculty/prateek.jpg"
                                         alt="Prof. Prateek Sharma"
                                         className="vc-image"
+                                        loading="lazy"
                                     />
                                 </div>
                             </div>

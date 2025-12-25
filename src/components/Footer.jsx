@@ -38,9 +38,9 @@ const Footer = () => {
 
     const quickLinks = [
         { label: 'Contact Us', path: '/contact' },
-        { label: 'Team',},
+        { label: 'Team', },
         { label: 'Programs', path: '/programmes' },
-        { label: 'News'},
+        { label: 'News' },
     ];
 
     const exploreLinks = [
@@ -70,7 +70,7 @@ const Footer = () => {
                         transition={{ duration: 0.5 }}
                     >
                         <div className="footer-logo-section">
-                            <img src="/images/logos/dtu_logo.png" alt="DTU Logo" className="footer-logo" />
+                            <img src="/images/logos/dtu_logo.png" alt="DTU Logo" className="footer-logo" loading="lazy" />
                             <div className="footer-logo-text">
                                 <span className="logo-highlight">CTEL</span> DTU
                             </div>
@@ -190,7 +190,7 @@ const Footer = () => {
             {/* Copyright Bar */}
             <div className="footer-bottom">
                 <div className="container footer-bottom-content">
-                    <p>© Copyright CTEL DTU. All Rights Reserved. Developed & Maintained by Team CTEL DTU | (Website Launched on 25-12-2025) Last Updated: 25-12-2025</p>
+                    <p>©️ Copyright CTEL DTU. All Rights Reserved. Developed & Maintained by Team CTEL DTU | (Website Launched on 25-12-2025) Last Updated: 25-12-2025</p>
                     <div className="footer-bottom-actions">
                         <button className="scroll-top-btn" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Scroll to top">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
