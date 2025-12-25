@@ -44,6 +44,7 @@
     object-fit: contain;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
     transition: all var(--transition-normal);
+    padding: 6px 0;
 }
 
 .logo-link:hover .logo-image {
@@ -434,4 +435,45 @@
     color: var(--accent-gold);
     border-left-color: var(--accent-gold);
     padding-left: 60px;
+}
+
+/* Disabled Dropdown Items */
+.dropdown-item-disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.dropdown-item-disabled:hover {
+    background: transparent;
+    padding-left: 22px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.dropdown-item-disabled:hover::before {
+    transform: scaleY(0);
+}
+
+.mobile-submenu-link-disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.mobile-submenu-link-disabled:hover {
+    background: transparent;
+    color: rgba(255, 255, 255, 0.6);
+    border-left-color: transparent;
+    padding-left: 52px;
+}
+
+/* Coming Soon Badge */
+.coming-soon-badge {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: linear-gradient(135deg, var(--accent-gold), var(--accent-gold-dark));
+    color: var(--gray-900);
+    padding: 3px 8px;
+    border-radius: 10px;
+    margin-left: auto;
 }

@@ -78,15 +78,65 @@ const ProgrammeDetail = () => {
                             </div>
                         </motion.section>
 
-                        {/* Objectives */}
-                        {programme.objectives && (
+                        {/* Program Directors */}
+                        {programme.directors && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.15 }}
+                            >
+                                <h2>Program Director(s)</h2>
+                                <div className="directors-list">
+                                    {programme.directors.map((director, index) => (
+                                        <div key={index} className="director-card">
+                                            <div className="director-avatar">
+                                                {director.image && <img src={director.image} alt={director.name} />}
+                                            </div>
+                                            <div className="director-info">
+                                                <h3>{director.name}</h3>
+                                                <p>{director.designation}</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </motion.section>
+                        )}
+
+                        {/* Faculty */}
+                        {programme.faculty && (
                             <motion.section
                                 className="content-card"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.2 }}
                             >
-                                <h2>Program Objectives</h2>
+                                <h2>Program Faculty</h2>
+                                <div className="directors-list">
+                                    {programme.faculty.map((faculty, index) => (
+                                        <div key={index} className="director-card">
+                                            <div className="director-avatar">
+                                                {faculty.image && <img src={faculty.image} alt={faculty.name} />}
+                                            </div>
+                                            <div className="director-info">
+                                                <h3>{faculty.name}</h3>
+                                                <p>{faculty.designation}</p>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </motion.section>
+                        )}
+
+                        {/* Objectives */}
+                        {programme.objectives && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.25 }}
+                            >
+                                <h2>Program Outcomes & Objectives</h2>
                                 <ul className="objectives-list">
                                     {programme.objectives.map((obj, index) => (
                                         <li key={index}>{obj}</li>
@@ -95,50 +145,13 @@ const ProgrammeDetail = () => {
                             </motion.section>
                         )}
 
-                        {/* Schedule */}
-                        {programme.schedule && (
-                            <motion.section
-                                className="content-card"
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.3 }}
-                            >
-                                <h2>Class Schedule</h2>
-                                <p className="schedule-duration">Programme Duration: {programme.duration}</p>
-                                <ul className="schedule-list">
-                                    <li>• Total Learning Hours: {programme.schedule.totalHours} hours</li>
-                                    {programme.schedule.liveHours && <li>• {programme.schedule.liveHours} hours of live online sessions</li>}
-                                    {programme.schedule.assignmentHours && <li>• {programme.schedule.assignmentHours} hours Assignments</li>}
-                                    {programme.schedule.capstoneHours && <li>• {programme.schedule.capstoneHours} hours Capstone Project</li>}
-                                    {programme.schedule.campusHours && <li>• {programme.schedule.campusHours} hours Campus sessions</li>}
-                                    {programme.schedule.campusImmersion && <li>• {programme.schedule.campusImmersion}</li>}
-                                    {programme.schedule.masterclasses && <li>• {programme.schedule.masterclasses}</li>}
-                                </ul>
-                                <p className="schedule-timing"><strong>Class Timings:</strong> {programme.schedule.timing}</p>
-                            </motion.section>
-                        )}
-
-                        {/* Eligibility */}
-                        <motion.section
-                            className="content-card"
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 0.4 }}
-                        >
-                            <h2>Eligibility Criteria</h2>
-                            <p>{programme.eligibility}</p>
-                            {programme.experience && (
-                                <p className="experience-req"><strong>Experience:</strong> {programme.experience}</p>
-                            )}
-                        </motion.section>
-
                         {/* Target Audience */}
                         {programme.targetAudience && (
                             <motion.section
                                 className="content-card"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.45 }}
+                                transition={{ duration: 0.5, delay: 0.3 }}
                             >
                                 <h2>Who Should Attend / Target Segment?</h2>
                                 {Array.isArray(programme.targetAudience) ? (
@@ -156,38 +169,15 @@ const ProgrammeDetail = () => {
                             </motion.section>
                         )}
 
-                        {/* Highlights */}
-                        {programme.highlights && (
-                            <motion.section
-                                className="content-card"
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.5 }}
-                            >
-                                <h2 className="highlights-title">Programme Highlights</h2>
-                                <div className="highlights-grid">
-                                    {programme.highlights.map((highlight, index) => (
-                                        <motion.div
-                                            key={index}
-                                            className="highlight-card"
-                                            whileHover={{ scale: 1.02 }}
-                                        >
-                                            <p>{highlight}</p>
-                                        </motion.div>
-                                    ))}
-                                </div>
-                            </motion.section>
-                        )}
-
-                        {/* Modules */}
+                        {/* Modules / Program Contents */}
                         {programme.modules && (
                             <motion.section
                                 className="content-card"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.6 }}
+                                transition={{ duration: 0.5, delay: 0.35 }}
                             >
-                                <h2>Programme Modules</h2>
+                                <h2>Program Contents</h2>
                                 <div className="modules-accordion">
                                     {programme.modules.map((module, index) => (
                                         <div key={index} className="module-item">
@@ -217,11 +207,6 @@ const ProgrammeDetail = () => {
                                                                 <li key={idx}>{topic}</li>
                                                             ))}
                                                         </ul>
-                                                        {module.outcome && (
-                                                            <div className="module-outcome">
-                                                                <strong>Learning Outcomes:</strong> {module.outcome}
-                                                            </div>
-                                                        )}
                                                     </motion.div>
                                                 )}
                                             </AnimatePresence>
@@ -231,48 +216,123 @@ const ProgrammeDetail = () => {
                             </motion.section>
                         )}
 
-                        {/* Program Directors */}
-                        {programme.directors && (
+                        {/* Pedagogy */}
+                        {programme.pedagogy && (
                             <motion.section
                                 className="content-card"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.65 }}
+                                transition={{ duration: 0.5, delay: 0.4 }}
                             >
-                                <h2>Program Director(s)</h2>
-                                <div className="directors-list">
-                                    {programme.directors.map((director, index) => (
-                                        <div key={index} className="director-card">
-                                            <div className="director-avatar"></div>
-                                            <div className="director-info">
-                                                <h3>{director.name}</h3>
-                                                <p>{director.designation}</p>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
+                                <h2>Pedagogy</h2>
+                                <p>{programme.pedagogy}</p>
                             </motion.section>
                         )}
-                        {/* Faculty */}
-                        {programme.faculty && (
+
+                        {/* Duration / Schedule */}
+                        {programme.schedule && (
                             <motion.section
                                 className="content-card"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.65 }}
+                                transition={{ duration: 0.5, delay: 0.45 }}
                             >
-                                <h2>Program Faculty(s)</h2>
-                                <div className="directors-list">
-                                    {programme.faculty.map((director, index) => (
-                                        <div key={index} className="director-card">
-                                            <div className="director-avatar"></div>
-                                            <div className="director-info">
-                                                <h3>{director.name}</h3>
-                                                <p>{director.designation}</p>
-                                            </div>
-                                        </div>
+                                <h2>Duration of the Program</h2>
+                                <p className="schedule-duration">Programme Duration: {programme.duration}</p>
+                                <ul className="schedule-list">
+                                    <li>• Total Learning Hours: {programme.schedule.totalHours} hours</li>
+                                    {programme.schedule.campusHours && <li>• Campus classes: {programme.schedule.campusHours} hours</li>}
+                                    {programme.schedule.liveHours && <li>• Online classes: {programme.schedule.liveHours} hours</li>}
+                                    {programme.schedule.tutorialHours && <li>• Tutorial Hours: {programme.schedule.tutorialHours}</li>}
+                                    {programme.schedule.projectMentorship && <li>• Project Mentorship: {programme.schedule.projectMentorship}</li>}
+                                    {programme.schedule.assignmentHours && <li>• {programme.schedule.assignmentHours} hours Assignments</li>}
+                                    {programme.schedule.capstoneHours && <li>• {programme.schedule.capstoneHours} hours Capstone Project</li>}
+                                    {programme.schedule.campusImmersion && <li>• {programme.schedule.campusImmersion}</li>}
+                                    {programme.schedule.masterclasses && <li>• {programme.schedule.masterclasses}</li>}
+                                </ul>
+                                <p className="schedule-timing"><strong>Program Schedule:</strong> {programme.schedule.timing}</p>
+                            </motion.section>
+                        )}
+
+                        {/* Key Learning Outcomes */}
+                        {programme.keyLearningOutcomes && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.47 }}
+                            >
+                                <h2>Key Learning Outcomes</h2>
+                                <ul className="objectives-list">
+                                    {programme.keyLearningOutcomes.map((item, index) => (
+                                        <li key={index}>{item}</li>
                                     ))}
-                                </div>
+                                </ul>
+                            </motion.section>
+                        )}
+
+                        {/* Tools / Libraries */}
+                        {programme.tools && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.48 }}
+                            >
+                                <h2>Tools / Libraries</h2>
+                                <ul className="objectives-list">
+                                    {programme.tools.map((tool, index) => (
+                                        <li key={index}>{tool}</li>
+                                    ))}
+                                </ul>
+                            </motion.section>
+                        )}
+
+                        {/* In-Campus Modules */}
+                        {programme.inCampusModules && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.49 }}
+                            >
+                                <h2>In-Campus Modules</h2>
+                                <p>{programme.inCampusModules}</p>
+                            </motion.section>
+                        )}
+
+                        {/* Evaluation Methodology */}
+                        {programme.evaluation && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.5 }}
+                            >
+                                <h2>Evaluation Methodology</h2>
+                                <p>{programme.evaluation.description}</p>
+                                <p>{programme.evaluation.attendance}</p>
+                                <p>{programme.evaluation.projects}</p>
+                                {programme.evaluation.passingCriteria && (
+                                    <p>{programme.evaluation.passingCriteria}</p>
+                                )}
+                            </motion.section>
+                        )}
+
+                        {/* Assignments / Case-Projects */}
+                        {programme.assignments && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.52 }}
+                            >
+                                <h2>Assignments / Case-Projects</h2>
+                                <ul className="assignments-list">
+                                    {programme.assignments.map((assignment, index) => (
+                                        <li key={index}>{assignment}</li>
+                                    ))}
+                                </ul>
                             </motion.section>
                         )}
 
@@ -282,7 +342,7 @@ const ProgrammeDetail = () => {
                                 className="content-card"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.7 }}
+                                transition={{ duration: 0.5, delay: 0.55 }}
                             >
                                 <h2>Certification</h2>
                                 <ul className="certification-list">
@@ -311,51 +371,79 @@ const ProgrammeDetail = () => {
                             </motion.section>
                         )}
 
-                        {/* Evaluation */}
-                        {programme.evaluation && (
+                        {/* Eligibility */}
+                        <motion.section
+                            className="content-card"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.6 }}
+                        >
+                            <h2>Eligibility</h2>
+                            <p>{programme.eligibility}</p>
+                            {programme.experience && (
+                                <p className="experience-req"><strong>Experience:</strong> {programme.experience}</p>
+                            )}
+                        </motion.section>
+
+                        {/* Batch Size */}
+                        {programme.batchSize && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.65 }}
+                            >
+                                <h2>Batch Size</h2>
+                                <p><strong>Minimum:</strong> {programme.batchSize.minimum} participants</p>
+                                <p><strong>Maximum:</strong> {programme.batchSize.maximum} participants</p>
+                            </motion.section>
+                        )}
+
+                        {/* Program Delivery */}
+                        {programme.programDelivery && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.7 }}
+                            >
+                                <h2>Program Delivery</h2>
+                                <p>{programme.programDelivery}</p>
+                            </motion.section>
+                        )}
+
+                        {/* Selection Criteria */}
+                        {programme.selectionCriteria && (
                             <motion.section
                                 className="content-card"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.75 }}
                             >
-                                <h2>Evaluation Methodology</h2>
-                                <p>{programme.evaluation.description}</p>
-                                <p>{programme.evaluation.attendance}</p>
-                                <p>{programme.evaluation.projects}</p>
+                                <h2>Selection Criteria</h2>
+                                <p>Screening the Participants Profile based on the following criteria:</p>
+                                <ul className="criteria-list">
+                                    {programme.selectionCriteria.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                    ))}
+                                </ul>
                             </motion.section>
                         )}
 
-                        {/* Pedagogy */}
-                        {programme.pedagogy && (
+                        {/* Admission Criteria */}
+                        {programme.admissionCriteria && (
                             <motion.section
                                 className="content-card"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.8 }}
                             >
-                                <h2>Pedagogy</h2>
-                                <p>{programme.pedagogy}</p>
-                            </motion.section>
-                        )}
-
-                        {/* Launch Schedule */}
-                        {programme.launchSchedule && (
-                            <motion.section
-                                className="content-card"
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.85 }}
-                            >
-                                <h2>Program Launch Schedule</h2>
-                                <div className="schedule-table">
-                                    {Object.entries(programme.launchSchedule).map(([key, value]) => (
-                                        <div key={key} className="schedule-row">
-                                            <span className="schedule-label">{key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}:</span>
-                                            <span className="schedule-value">{value}</span>
-                                        </div>
+                                <h2>Admission Criteria</h2>
+                                <ul className="criteria-list">
+                                    {programme.admissionCriteria.map((item, index) => (
+                                        <li key={index}>{item}</li>
                                     ))}
-                                </div>
+                                </ul>
                             </motion.section>
                         )}
 
@@ -365,7 +453,7 @@ const ProgrammeDetail = () => {
                                 className="content-card"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.9 }}
+                                transition={{ duration: 0.5, delay: 0.85 }}
                             >
                                 <h2>Fee Structure</h2>
                                 <div className="fee-list">
@@ -410,35 +498,23 @@ const ProgrammeDetail = () => {
                             </motion.section>
                         )}
 
-                        {/* Selection Criteria */}
-                        {programme.selectionCriteria && (
+                        {/* Program Launch Schedule */}
+                        {programme.launchSchedule && (
                             <motion.section
                                 className="content-card"
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.92 }}
+                                transition={{ duration: 0.5, delay: 0.9 }}
                             >
-                                <h2>Selection Criteria</h2>
-                                <p>Screening the Participants Profile based on the following criteria:</p>
-                                <ul className="criteria-list">
-                                    {programme.selectionCriteria.map((item, index) => (
-                                        <li key={index}>{item}</li>
+                                <h2>Program Launch Schedule</h2>
+                                <div className="schedule-table">
+                                    {Object.entries(programme.launchSchedule).map(([key, value]) => (
+                                        <div key={key} className="schedule-row">
+                                            <span className="schedule-label">{key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}:</span>
+                                            <span className="schedule-value">{value}</span>
+                                        </div>
                                     ))}
-                                </ul>
-                            </motion.section>
-                        )}
-
-                        {/* Batch Size */}
-                        {programme.batchSize && (
-                            <motion.section
-                                className="content-card"
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.93 }}
-                            >
-                                <h2>Batch Size</h2>
-                                <p><strong>Minimum:</strong> {programme.batchSize.minimum} participants</p>
-                                <p><strong>Maximum:</strong> {programme.batchSize.maximum} participants</p>
+                                </div>
                             </motion.section>
                         )}
 
@@ -473,6 +549,29 @@ const ProgrammeDetail = () => {
                                         <li key={index}>{item}</li>
                                     ))}
                                 </ul>
+                            </motion.section>
+                        )}
+
+                        {/* Highlights */}
+                        {programme.highlights && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 1.05 }}
+                            >
+                                <h2 className="highlights-title">Programme Highlights</h2>
+                                <div className="highlights-grid">
+                                    {programme.highlights.map((highlight, index) => (
+                                        <motion.div
+                                            key={index}
+                                            className="highlight-card"
+                                            whileHover={{ scale: 1.02 }}
+                                        >
+                                            <p>{highlight}</p>
+                                        </motion.div>
+                                    ))}
+                                </div>
                             </motion.section>
                         )}
                     </div>
@@ -514,7 +613,7 @@ const ProgrammeDetail = () => {
                                 </div>
                                 <div className="info-row">
                                     <span>Status:</span>
-                                    <span className="status-badge">{programme.status || 'Admissions Open'}</span>
+                                    <span className="status-badge">{programme.status || 'Coming Soon'}</span>
                                 </div>
                                 <div className="info-row">
                                     <span>Total Fee:</span>
@@ -526,14 +625,13 @@ const ProgrammeDetail = () => {
                                 </div>
                             </div>
 
-                            <a
-                                href="https://saarthi.dtu.ac.in/digi_edu/sourceCode/index.php"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn btn-primary full-width"
+                            <button
+                                className="btn btn-primary full-width btn-disabled"
+                                disabled
+                                title="Enrollment not available yet"
                             >
-                                Apply Now
-                            </a>
+                                Enrol Now
+                            </button>
                         </div>
                     </motion.aside>
                 </div>

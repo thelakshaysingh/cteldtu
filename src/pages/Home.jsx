@@ -135,7 +135,7 @@ const Home = () => {
             {/* Hero Section - Image Background instead of Video */}
             <section className="hero">
                 <div className="hero-bg">
-                    <img src="/images/campus-image.jpg" alt="DTU Campus" className="hero-bg-image" />
+                    <img src="/images/campus.jpg" alt="DTU Campus" className="hero-bg-image" />
                     <div className="hero-overlay" />
                 </div>
                 <motion.div

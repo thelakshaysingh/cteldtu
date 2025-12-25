@@ -34,7 +34,7 @@ const MessageVC = () => {
                             <div className="message-image-wrap">
                                 <div className="message-image-sticky">
                                     <img
-                                        src="/images/faculty/vc.jpg"
+                                        src="/images/faculty/prateek.jpg"
                                         alt="Prof. Prateek Sharma"
                                         className="vc-image"
                                     />

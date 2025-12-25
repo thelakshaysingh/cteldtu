@@ -118,12 +118,30 @@
 .criteria-list,
 .refund-list,
 .important-list,
-.certification-list {
+.certification-list,
+.assignments-list {
     list-style: disc;
     padding-left: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+}
+
+/* Tools List */
+.tools-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.tool-tag {
+    background: linear-gradient(135deg, var(--primary), var(--primary-light));
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.875rem;
+    font-weight: 500;
 }
 
 .objectives-list li,
@@ -287,6 +305,13 @@
     border-radius: 50%;
     background-color: var(--gray-200);
     flex-shrink: 0;
+    overflow: hidden;
+}
+
+.director-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .director-info h3 {
@@ -561,4 +586,16 @@
 
 .not-found h1 {
     margin-bottom: 1rem;
+}
+
+/* Disabled Button */
+.btn-disabled {
+    opacity: 0.6;
+    cursor: not-allowed !important;
+    pointer-events: none;
+}
+
+.btn-disabled:hover {
+    transform: none !important;
+    box-shadow: none !important;
 }

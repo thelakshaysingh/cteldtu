@@ -90,7 +90,7 @@ const Programmes = () => {
                                                 <strong>Service Provider:</strong> {programme.serviceProvider}
                                             </p>
                                         )}
-                                        <span className="status-badge">Status: Admissions Open</span>
+                                        <span className="status-badge">Status: Coming Soon</span>
                                         <p className="detail">
                                             <strong>Start Date:</strong> {formatDate(programme.startDate)}
                                         </p>

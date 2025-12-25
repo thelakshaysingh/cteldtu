@@ -17,20 +17,20 @@ const Header = () => {
                 { label: 'Message from Dean (DE)', path: '/message-dean' },
             ],
         },
-        {
+         {
             label: 'Programs',
             dropdown: [
                 { label: 'Certificate', path: '/programmes#certificate' },
-                { label: 'Diploma', path: '/programmes#diploma' },
-                { label: 'Degree', path: '/programmes#degree' },
+                { label: 'Diploma', path: '#', disabled: true },
+                { label: 'Degree', path: '#', disabled: true  },
             ],
         },
         {
             label: 'Empanelled Companies',
             dropdown: [
-                { label: 'JARO', path: '/company/jaro' },
-                { label: 'TimesPro', path: '/company/timespro' },
-                { label: 'VCNow', path: '/company/vcnow' },
+                { label: 'JARO', path: 'https://www.jaroeducation.com/', external: true },
+                { label: 'TimesPro', path: 'https://timespro.com/', external: true },
+                { label: 'VCNow', path: 'https://vcnow.in/', external: true },
             ],
         },
         { label: 'Contact Us', path: '/contact' },
@@ -56,7 +56,7 @@ const Header = () => {
                 <div className="header-inner container">
                     <Link to="/" className="logo-link" onClick={closeMobileMenu}>
                         <img src="/images/logos/dtu_logo.png" alt="DTU Logo" className="logo-image" />
-                        <span className="logo-text">Delhi Technological University</span>
+                        <span className="logo-text">CTEL DTU</span>
                     </Link>
 
                     {/* Desktop Navigation */}
@@ -75,7 +75,7 @@ const Header = () => {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                         </svg>
                                     </span>
-                                    <AnimatePresence>
+                                     <AnimatePresence>
                                         {activeDropdown === index && (
                                             <motion.div
                                                 className="dropdown-menu"
@@ -85,13 +85,33 @@ const Header = () => {
                                                 transition={{ duration: 0.2 }}
                                             >
                                                 {item.dropdown.map((subItem, subIndex) => (
-                                                    <Link
-                                                        key={subIndex}
-                                                        to={subItem.path}
-                                                        className="dropdown-item"
-                                                    >
-                                                        {subItem.label}
-                                                    </Link>
+                                                    subItem.disabled ? (
+                                                        <span
+                                                            key={subIndex}
+                                                            className="dropdown-item dropdown-item-disabled"
+                                                        >
+                                                            {subItem.label}
+                                                            {subItem.comingSoon && <span className="coming-soon-badge">Coming Soon</span>}
+                                                        </span>
+                                                    ) : subItem.external ? (
+                                                        <a
+                                                            key={subIndex}
+                                                            href={subItem.path}
+                                                            target="_blank"
+                                                            rel="noopener noreferrer"
+                                                            className="dropdown-item"
+                                                        >
+                                                            {subItem.label}
+                                                        </a>
+                                                    ) : (
+                                                        <Link
+                                                            key={subIndex}
+                                                            to={subItem.path}
+                                                            className="dropdown-item"
+                                                        >
+                                                            {subItem.label}
+                                                        </Link>
+                                                    )
                                                 ))}
                                             </motion.div>
                                         )}
@@ -167,14 +187,35 @@ const Header = () => {
                                                     transition={{ duration: 0.3 }}
                                                 >
                                                     {item.dropdown.map((subItem, subIndex) => (
-                                                        <Link
-                                                            key={subIndex}
-                                                            to={subItem.path}
-                                                            className="mobile-submenu-link"
-                                                            onClick={closeMobileMenu}
-                                                        >
-                                                            {subItem.label}
-                                                        </Link>
+                                                        subItem.disabled ? (
+                                                            <span
+                                                                key={subIndex}
+                                                                className="mobile-submenu-link mobile-submenu-link-disabled"
+                                                            >
+                                                                {subItem.label}
+                                                                {subItem.comingSoon && <span className="coming-soon-badge">Coming Soon</span>}
+                                                            </span>
+                                                        ) : subItem.external ? (
+                                                            <a
+                                                                key={subIndex}
+                                                                href={subItem.path}
+                                                                target="_blank"
+                                                                rel="noopener noreferrer"
+                                                                className="mobile-submenu-link"
+                                                                onClick={closeMobileMenu}
+                                                            >
+                                                                {subItem.label}
+                                                            </a>
+                                                        ) : (
+                                                            <Link
+                                                                key={subIndex}
+                                                                to={subItem.path}
+                                                                className="mobile-submenu-link"
+                                                                onClick={closeMobileMenu}
+                                                            >
+                                                                {subItem.label}
+                                                            </Link>
+                                                        )
                                                     ))}
                                                 </motion.div>
                                             )}

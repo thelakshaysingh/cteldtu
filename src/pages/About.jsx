@@ -136,7 +136,7 @@ const About = () => {
                         >
                             <h3>Get in Touch</h3>
                             <p><strong>Email:</strong> ctel@dtu.ac.in</p>
-                            <p><strong>Phone:</strong> +91-11-XXXX-XXXX</p>
+                            <p><strong>Phone:</strong> 011-27871233</p>
                             <p><strong>Address:</strong> Delhi Technological University, Shahbad Daulatpur, Main Bawana Road, Delhi-110042</p>
                         </motion.div>
                     </motion.div>
