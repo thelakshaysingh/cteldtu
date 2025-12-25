@@ -1,0 +1,256 @@
+.programmes-page {
+    min-height: 100vh;
+    background-color: var(--white);
+}
+
+.breadcrumb-section {
+    background-color: var(--gray-50);
+    padding: 1rem 0;
+}
+
+.breadcrumb-link {
+    color: var(--primary);
+    font-weight: 600;
+    transition: color var(--transition-fast);
+}
+
+.breadcrumb-link:hover {
+    color: var(--primary-dark);
+}
+
+/* Programmes Header */
+.programmes-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .programmes-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+.programmes-title {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.programmes-count {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.5rem;
+}
+
+/* Filter */
+.filter-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--gray-700);
+}
+
+.filter-label input {
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+    accent-color: var(--primary);
+}
+
+/* Programmes List */
+.programmes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.no-programmes {
+    text-align: center;
+    padding: 3rem;
+    color: var(--gray-500);
+    font-size: 1.1rem;
+}
+
+/* Programme Row */
+.programme-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    background: var(--white);
+    border: 2px solid #FECACA;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        box-shadow 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        border-color 0.35s ease;
+}
+
+.programme-row:hover {
+    box-shadow: 0 18px 40px rgba(1, 70, 82, 0.12), 0 6px 18px rgba(0, 0, 0, 0.08);
+    border-color: rgba(1, 70, 82, 0.25);
+}
+
+@media (min-width: 1024px) {
+    .programme-row {
+        grid-template-columns: 1.6fr 1fr;
+    }
+}
+
+.programme-left-section {
+    background: linear-gradient(to bottom right, rgba(1, 70, 82, 0.08), rgba(1, 70, 82, 0.15));
+    padding: 2rem;
+    position: relative;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.programme-info-top {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--gray-700);
+}
+
+.batch-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--white);
+    color: var(--gray-800);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+}
+
+.programme-main-content {
+    margin-top: 2rem;
+    flex: 1;
+}
+
+.programme-main-content h3 {
+    font-size: 1.25rem;
+    color: var(--gray-900);
+    margin-bottom: 0.75rem;
+}
+
+.programme-subtitle {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    margin-bottom: 1rem;
+}
+
+.programme-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    color: var(--gray-700);
+}
+
+.enroll-btn {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--radius-lg);
+    font-weight: 600;
+    transition: background var(--transition-fast);
+    width: fit-content;
+}
+
+.enroll-btn:hover {
+    background: var(--primary-dark);
+}
+
+.duration-badge {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--gray-800);
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    font-weight: 700;
+    width: fit-content;
+    border: 1px solid var(--gray-300);
+}
+
+.programme-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: auto;
+}
+
+/* Right Section */
+.programme-right-section {
+    background: var(--white);
+    padding: 2rem;
+    border-left: none;
+    border-top: 2px solid var(--gray-200);
+}
+
+@media (min-width: 1024px) {
+    .programme-right-section {
+        border-left: 2px solid var(--gray-200);
+        border-top: none;
+    }
+}
+
+.programme-right-section h4 {
+    font-size: 1.1rem;
+    color: var(--gray-900);
+    margin-bottom: 1rem;
+}
+
+.programme-right-section .provider {
+    font-size: 0.875rem;
+    color: var(--gray-600);
+    margin-bottom: 0.75rem;
+}
+
+.status-badge {
+    display: inline-block;
+    background: rgba(1, 70, 82, 0.15);
+    color: var(--primary);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    border-radius: var(--radius-sm);
+    margin-bottom: 1rem;
+}
+
+.programme-right-section .detail {
+    font-size: 0.875rem;
+    color: var(--gray-700);
+    margin-bottom: 0.5rem;
+}
+
+.know-more-btn {
+    display: block;
+    width: 100%;
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+    transition: background var(--transition-fast);
+}
+
+.know-more-btn:hover {
+    background: var(--primary-dark);
+}
