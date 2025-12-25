@@ -1,41 +1,8 @@
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Footer.css';
 
 const Footer = () => {
-    const [visitorCount, setVisitorCount] = useState(0);
-
-    // Visitor counter using localStorage
-    useEffect(() => {
-        const VISITOR_KEY = 'ctel_visitor_count';
-        const VISITOR_ID_KEY = 'ctel_visitor_id';
-
-        // Get or create visitor ID
-        let visitorId = localStorage.getItem(VISITOR_ID_KEY);
-        let currentCount = parseInt(localStorage.getItem(VISITOR_KEY) || '0');
-
-        // If this is a new visitor
-        if (!visitorId) {
-            visitorId = 'visitor_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
-            localStorage.setItem(VISITOR_ID_KEY, visitorId);
-            currentCount += 1;
-            localStorage.setItem(VISITOR_KEY, currentCount.toString());
-        }
-
-        // Start with a base count for realism
-        const baseCount = 0;
-        setVisitorCount(baseCount + currentCount);
-    }, []);
-
-    // Format visitor count
-    const formatCount = (count) => {
-        if (count >= 1000) {
-            return (count / 1000).toFixed(1) + 'K';
-        }
-        return count.toString();
-    };
-
     const quickLinks = [
         { label: 'Contact Us', path: '/contact' },
         { label: 'Team', },
@@ -61,7 +28,7 @@ const Footer = () => {
             <div className="footer-main">
                 <div className="footer-bg-overlay" />
                 <div className="container footer-content">
-                    {/* Top Row - Logo & Visitor Count */}
+                    {/* Top Row - Logo */}
                     <motion.div
                         className="footer-top-row"
                         initial={{ opacity: 0, y: 20 }}
@@ -74,10 +41,6 @@ const Footer = () => {
                             <div className="footer-logo-text">
                                 <span className="logo-highlight">CTEL</span> DTU
                             </div>
-                        </div>
-                        <div className="visitor-counter">
-                            <span className="visitor-label">TOTAL VISITORS :</span>
-                            <span className="visitor-count">{formatCount(visitorCount)}</span>
                         </div>
                     </motion.div>
 
