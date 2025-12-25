@@ -77,7 +77,7 @@ const Footer = () => {
                         </div>
                         <div className="visitor-counter">
                             <span className="visitor-label">TOTAL VISITORS :</span>
-                            <span className="visitor-count">{visitorCount >= 100 ? formatCount(visitorCount) : '196'}</span>
+                            <span className="visitor-count">{formatCount(visitorCount)}</span>
                         </div>
                     </motion.div>
 

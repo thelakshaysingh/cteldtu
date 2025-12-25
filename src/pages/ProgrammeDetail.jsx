@@ -630,7 +630,7 @@ const ProgrammeDetail = () => {
                                 disabled
                                 title="Enrollment not available yet"
                             >
-                                Enrol Now
+                                Enroll Now
                             </button>
                         </div>
                     </motion.aside>
