@@ -135,7 +135,7 @@ const Home = () => {
             {/* Hero Section - Image Background instead of Video */}
             <section className="hero">
                 <div className="hero-bg">
-                    <img src="/images/campus.jpg" alt="DTU Campus" className="hero-bg-image" />
+                    <img src="/images/maincampus.jpg" alt="DTU Campus" className="hero-bg-image" />
                     <div className="hero-overlay" />
                 </div>
                 <motion.div
@@ -328,7 +328,7 @@ const Home = () => {
                         <motion.div className="short-film-video" variants={fadeInUp}>
                             <div className="responsive-video">
                                 <iframe
-                                    src="https://www.youtube.com/embed/pYfLvmp7JQw?rel=0&modestbranding=1"
+                                    src="https://www.youtube.com/embed/qQzNGTYo2HQ"
                                     title="DTU - A Short Film"
                                     frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

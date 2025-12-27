@@ -23,6 +23,7 @@ const Header = () => {
                 { label: 'Certificate', path: '/programmes#certificate' },
                 { label: 'Diploma', path: '#', disabled: true },
                 { label: 'Degree', path: '#', disabled: true  },
+                { label: 'DTU Edge', path: '#', disabled: true  },
             ],
         },
         {
@@ -55,6 +56,7 @@ const Header = () => {
             <header className="header">
                 <div className="header-inner container">
                     <Link to="/" className="logo-link" onClick={closeMobileMenu}>
+                        <img src="/images/logos/ctel_logo.png" alt="CTEL DTU" className="logo-image" />
                         <img src="/images/logos/dtu_logo.png" alt="DTU Logo" className="logo-image" />
                         <span className="logo-text">CTEL DTU</span>
                     </Link>

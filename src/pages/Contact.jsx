@@ -92,11 +92,6 @@ const Contact = () => {
                             </div>
 
                             <div className="info-item">
-                                <h3>📞 Phone</h3>
-                                <p>011-27871233</p>
-                            </div>
-
-                            <div className="info-item">
                                 <h3>📍 Address</h3>
                                 <p>
                                     Delhi Technological University,<br />
