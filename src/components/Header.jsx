@@ -29,9 +29,9 @@ const Header = () => {
         {
             label: 'Empanelled Companies',
             dropdown: [
-                { label: 'JARO', path: 'https://www.jaroeducation.com/', external: true },
-                { label: 'TimesPro', path: 'https://timespro.com/', external: true },
-                { label: 'VCNow', path: 'https://vcnow.in/', external: true },
+                { label: 'JARO Institute of Technology Management and Research Private Limited (JARO)', path: 'https://www.jaroeducation.com/', external: true },
+                { label: 'Times Edutech and Events Limited (TimesPro)', path: 'https://timespro.com/', external: true },
+                { label: 'Unified Collaboration Services LLP (VC Now)', path: 'https://vcnow.in/', external: true },
             ],
         },
         { label: 'Contact Us', path: '/contact' },

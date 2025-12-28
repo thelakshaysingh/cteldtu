@@ -19,7 +19,7 @@ const Footer = () => {
     const companyLinks = [
         { label: 'JARO', path: 'https://www.jaroeducation.com/', external: true },
         { label: 'TimesPro', path: 'https://timespro.com/', external: true },
-        { label: 'VCNow', path: 'https://vcnow.in/', external: true },
+        { label: 'UCS LLP (VCNow)', path: 'https://vcnow.in/', external: true },
     ];
 
     return (
