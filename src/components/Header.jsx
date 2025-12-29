@@ -21,9 +21,9 @@ const Header = () => {
             label: 'Programs',
             dropdown: [
                 { label: 'Certificate', path: '/programmes#certificate' },
-                { label: 'Diploma', path: '#', disabled: true },
                 { label: 'Degree', path: '#', disabled: true  },
-                { label: 'DTU Edge', path: '#', disabled: true  },
+                { label: 'Diploma', path: '#', disabled: true },
+                { label: 'DTU Edge', path: 'https://dtuedge.com/', external: true },
             ],
         },
         {
