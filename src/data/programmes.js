@@ -4,6 +4,7 @@ import { href } from "react-router-dom";
 export const programmes = [
         {
         id: 'renewable-energy',
+        enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_aprse/sourceCode/',
         title: 'Senior Management Program in Renewable Energy Strategy and Sustainable Leadership',
         shortTitle: 'Renewable Energy',
         subtitle: 'Strategic energy management and sustainable leadership for the future',
@@ -190,6 +191,7 @@ export const programmes = [
     },
     {
         id: 'ai',
+        enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_apai/sourceCode/',
         title: 'Advanced Program in Artificial Intelligence',
         shortTitle: 'AI Programme',
         subtitle: 'Master AI fundamentals and advanced techniques',
@@ -409,6 +411,7 @@ export const programmes = [
     },
     {
         id: 'csr-esg',
+        enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_lpce/sourceCode/',
         title: 'Leadership Program in CSR, ESG & Corporate Sustainability',
         shortTitle: 'CSR & ESG',
         subtitle: 'Strategic leadership for sustainable business transformation',

@@ -74,14 +74,18 @@ const Programmes = () => {
                                                 <span>🏛️ Campus Immersion</span>
                                             </div>
                                         </div>
-
                                         <div className="programme-bottom">
                                             <div className="duration-badge">{programme.duration}</div>
-                                            <Link to={`/programme/${programme.id}`} className="enroll-btn">
+                                            <a
+                                                href={programme.enroll}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="enroll-btn"
+                                            >
                                                 Enroll Now
-                                            </Link>
+                                            </a>
                                         </div>
-                                    </div>
+                                        </div>
 
                                     <div className="programme-right-section">
                                         <h4>{programme.title}</h4>

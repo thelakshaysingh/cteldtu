@@ -625,13 +625,16 @@ const ProgrammeDetail = () => {
                                 </div>
                             </div>
 
-                            <button
-                                className="btn btn-primary full-width btn-disabled"
-                                disabled
-                                title="Enrollment not available yet"
-                            >
-                                Enroll Now
-                            </button>
+                                <a
+                                    href={programme.enroll}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn btn-primary full-width"
+                                    title="Enrollment not available yet"
+                                    >
+                                    Enroll Now
+                                    </a>
+
                         </div>
                     </motion.aside>
                 </div>
