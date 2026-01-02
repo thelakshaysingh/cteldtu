@@ -131,7 +131,7 @@ export const programmes = [
                     'Support Vector Machines (SVM), Kernel SVM with Hands-on Demo',
                     'Multi-Class Classifiers',
                     'Clustering Methods with Hands-on Demo',
-                    'M3 Project: Classification Application'
+                    'M3 Project: Classification Application',
                 ],
                 outcome: 'Master classification algorithms and their applications.'
             },
@@ -151,18 +151,15 @@ export const programmes = [
             }
         ],
         assignments: [
-            'Logistic Regression Lab - Sentiment Analysis of Consumer Reviews',
-            'Decision Tree, Random Forest, XGBoost - Comparative analysis on benchmark datasets',
-            'Support Vector Machines (SVM) - Image classification using Fashion MNIST dataset',
-            'Neural Networks - Implement gradient descent and backpropagation from scratch',
-            'Neural Networks vs. SVM - Performance comparison on image classification tasks',
-            'Convolutional Neural Networks (CNN) - Computer vision, Occlusion and Grad-CAM interpretability',
-            'Sequential Models (RNN/LSTM) - Caption or summarize images and videos',
-            'Variational Autoencoders (VAE) - Implementation on MNIST dataset',
-            'Generative Adversarial Networks (GAN) - Implementation on benchmark datasets',
-            'Graph Neural Networks (GNN) - Social media recommender systems or drug interaction prediction',
-            'Natural Language Processing (NLP) - Text summarization',
-            'Course Project - Design and build your own recommender system'
+                    'Sentiment Analysis using Logistic Regression',
+                    'Comparative performance: Decision Trees vs Random Forest vs XGBoost to identify and  reduce customer attrition.',
+                    'Image Classification with SVM (FashionMNIST)',
+                    'Build Neural Networks from scratch',
+                    'CNN interpretability using Grad-CAM',
+                    'Image & video captioning with LSTMs',
+                    'Variational Autoencoder on MNIST',
+                    'GAN development for synthetic image generation',
+                    'Graph Neural Networks for Social Network Analysis'
         ],
         pedagogy: "It's a mix of classroom teaching, live examples, peer discussions, quizzes, assessments and context based case studies. Each lecture is accompanied by a hands-on demo session along with a student project. There will be doubt clearance and discussion sessions during and after the programme as well.",
         launchSchedule: {
