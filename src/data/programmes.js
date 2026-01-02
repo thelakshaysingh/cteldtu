@@ -3,203 +3,15 @@ import { href } from "react-router-dom";
 
 export const programmes = [
         {
-        id: 'renewable-energy',
-        enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_aprse/sourceCode/',
-        title: 'Senior Management Program in Renewable Energy Strategy and Sustainable Leadership',
-        shortTitle: 'Renewable Energy',
-        subtitle: 'Strategic energy management and sustainable leadership for the future',
-        description: 'Learn renewable energy technologies, sustainable energy management, and policy frameworks for a greener future.',
-        duration: '6 Months',
-        batch: 'Batch 01',
-        startDate: new Date('2026-01-10'),
-        applicationDeadline: 'TBD',
-        mode: 'Online + 3-day Campus',
-        cost: 'INR 1,50,000 + GST',
-        applicationFee: 'INR 2,000 + GST',
-        provider: 'DTU Centre for Executive Programmes',
-        serviceProvider: 'DTU Centre for Executive Programmes',
-        category: 'certificate',
-        image: '/images/program/2.png',
-        status: 'Coming Soon',
-        directors: [
-            { name: 'Prof. M. Rizwan', designation: 'Department of Electrical Engineering, DTU', image: '/images/faculty/rizwan.jpg', href: "https://dtu.ac.in/modules/facilities/people/faculty/view.php?uname=rizwan"}
-        ],
-        faculty: [
-            { name: 'Prof. M. Rizwan', designation: 'Department of Electrical Engineering, DTU', image: "/images/faculty/rizwan.jpg" }
-        ],
-        highlights: [
-            'Certificate from DTU, an Institute of Eminence',
-            'Learn from DTU faculty and industry experts',
-            'AI and data analytics for energy optimization',
-            '3-day Campus Visit at DTU Delhi',
-            'Network with energy and sustainability professionals',
-            'Comprehensive renewable energy frameworks'
-        ],
-        schedule: {
-            totalHours: 80,
-            liveHours: 67,
-            campusHours: 13,
-            tutorialHours: 'NA',
-            projectMentorship: 'NA',
-            campusImmersion: '3-day Campus Visit at the beginning of the course',
-            timing: 'Frequency: Once in a week (Sunday, 9:00 AM - 12:00 PM IST)'
-        },
-        eligibility: "For Indian Participants: Graduates (10+2+3) or Diploma Holders (only 10+2+3) from a recognized university (UGC/AICTE/DEC/AIU/State Government) in any discipline. For International Participants: Graduation or equivalent degree from any recognized University or Institution in their respective country.",
-        experience: 'Working Professionals with 5 years of work experience',
-        targetAudience: [
-            'Senior Managers and Heads of Energy or Sustainability Departments – responsible for designing and implementing renewable energy and sustainability strategies',
-            'Compliance and Risk Officers – involved in regulatory compliance, energy policies, and risk assessment related to renewable energy projects',
-            'Sustainability Professionals – managing environmental and energy impact initiatives',
-            'Business Leaders and Executives – looking to integrate renewable energy and sustainability into strategic decision-making',
-            'Corporate Strategy and Governance Leaders – interested in leveraging AI and analytics for energy management and sustainability reporting',
-            'Consultants and Advisors – working on renewable energy, sustainability, or ESG projects across industries',
-            'Board Members and C-Suite Executives – aiming to drive organizational change and leadership in sustainable energy practices'
-        ],
-        experienceLevel: '5–20+ years in corporate, energy, infrastructure, government, or non-profit sectors with exposure to energy management, sustainability, compliance, or strategic leadership.',
-        objectives: [
-            'The Senior Management Program in Renewable Energy Strategy and Sustainable Leadership is designed to equip senior executives with the knowledge and skills to strategically manage and lead renewable energy initiatives.',
-            'Participants will gain expertise in renewable energy systems, sustainable management practices, and energy transition strategies, while learning to leverage AI and data analytics for energy optimization, performance monitoring, and ESG reporting.',
-            'The program enables executives to formulate and implement sustainable energy projects, ensure compliance with national and international policies and ESG standards, drive cross-functional organizational change, and foster innovation in renewable energy technologies and corporate sustainability, thereby creating long-term value and impactful business outcomes.'
-        ],
-        modules: [
-            {
-                title: 'Module 1: Foundations of Renewable Energy & Sustainable Leadership',
-                topics: [
-                    'Week 1: Introduction to Renewable Energy & Energy Transition – Global energy scenario and trends, Conventional vs renewable energy sources, Drivers of energy transition, Challenges and opportunities in renewable energy adoption',
-                    'Week 2: Principles of Sustainable Leadership – Leadership competencies for sustainability, ESG frameworks and corporate governance, Role of leaders in energy transition, Decision-making for sustainable outcomes',
-                    'Week 3: Overview of Renewable Energy Technologies – Solar energy systems and photovoltaic technologies, Wind energy: onshore and offshore, Hydro and biomass energy systems, Energy storage and hybrid systems',
-                    'Week 4: Policy, Regulations, and Compliance in Renewable Energy – National and international policies, Incentives, subsidies, and renewable energy certificates, Regulatory frameworks and compliance requirements, Green building and sustainability certifications'
-                ],
-                outcome: 'Understand renewable energy fundamentals, sustainable leadership principles, and regulatory frameworks.'
-            },
-            {
-                title: 'Module 2: Renewable Energy Strategy & Planning',
-                topics: [
-                    'Week 5: Strategic Energy Management & Planning – Corporate energy strategy formulation, Energy audit and baseline assessment, Integration of renewables in organizational strategy, Long-term energy planning',
-                    'Week 6: Energy Economics and Financial Modeling – Cost-benefit analysis of renewable projects, Project financing models and risk assessment, ROI calculations for renewable energy investments, Budgeting and financial planning',
-                    'Week 7: Project Development and Implementation – Feasibility studies and site assessment, Technology selection and design considerations, Project lifecycle management, Procurement and vendor management',
-                    'Week 8: Risk Management and ESG Integration – Identifying technical, financial, and regulatory risks, ESG alignment in project planning, Sustainability impact assessment, Mitigation strategies and contingency planning'
-                ],
-                outcome: 'Develop strategic planning skills for renewable energy projects, including financial modeling and risk management.'
-            },
-            {
-                title: 'Module 3: AI & Analytics in Renewable Energy',
-                topics: [
-                    'Week 9: Introduction to AI and Big Data for Energy – Role of AI in renewable energy, Machine learning applications in energy forecasting, Predictive analytics for energy optimization, Big data in energy management',
-                    'Week 10: AI-Driven Energy Management and Optimization – Smart grids and microgrids, Demand forecasting and load management, Energy efficiency optimization, AI-enabled monitoring systems',
-                    'Week 11: Data Visualization and ESG Reporting – KPI definition and monitoring, Dashboards and reporting tools, ESG performance tracking, Visualization for decision-making',
-                    'Week 12: Case Studies in AI-Enabled Renewable Energy – Global success stories, Lessons learned from AI integration, Challenges in implementation, Group discussion and analysis'
-                ],
-                outcome: 'Apply AI and data analytics for energy management, optimization, and ESG reporting.'
-            },
-            {
-                title: 'Module 4: Sustainable Innovation & Leadership',
-                topics: [
-                    'Week 13: Innovation in Renewable Energy Technologies – Emerging technologies and R&D trends, Innovation frameworks for energy solutions, Case studies of successful innovations, Identifying business opportunities',
-                    'Week 14: Corporate Strategy for Sustainable Energy – Aligning renewable energy initiatives with business goals, Strategic roadmap for energy transition, Policy and regulatory considerations in strategy, Stakeholder engagement',
-                    'Week 15: Change Management in Energy Transition – Driving adoption across teams, Overcoming resistance to change, Communication strategies for stakeholders, Organizational readiness assessment',
-                    'Week 16: Leadership for ESG and Sustainability – Ethical leadership practices, Driving culture change, Corporate responsibility and accountability, Leading sustainable initiatives'
-                ],
-                outcome: 'Master sustainable innovation, corporate strategy alignment, and change management for energy transition.'
-            },
-            {
-                title: 'Module 5: Advanced Applications & Integration',
-                topics: [
-                    'Week 17: Smart Energy Solutions and Green Infrastructure – Microgrids and decentralized energy systems, Green buildings and energy-efficient operations, IoT applications in energy management, Case studies of smart energy integration',
-                    'Week 18: Renewable Energy Project Financing & Investment – Funding models and investment strategies, Green bonds and PPP projects, Risk-return analysis, Investor engagement and reporting',
-                    'Week 19: Performance Metrics and KPIs – Measuring efficiency and sustainability outcomes, ESG metrics and reporting standards, Benchmarking and continuous improvement, Tools for performance monitoring',
-                    'Week 20: Cross-Functional Collaboration and Strategy Execution – Coordinating operations, finance, and HR teams, Aligning organizational functions with energy strategy, Execution frameworks and project monitoring, Communication and stakeholder management'
-                ],
-                outcome: 'Integrate advanced applications, financing strategies, and cross-functional collaboration for renewable energy projects.'
-            },
-            {
-                title: 'Module 6: Capstone Project & Integration',
-                topics: [
-                    'Week 21: Project Planning & Data Collection – Defining project objectives and KPIs, Data collection methodologies, Stakeholder mapping, Project scoping',
-                    'Week 22: AI-Driven Analytics & Strategy Formulation – Data analysis using AI tools, Deriving insights and forecasting outcomes, Strategy formulation based on analytics, Integration with corporate objectives',
-                    'Week 23: Recommendations & Report Preparation – Developing actionable recommendations, Drafting project report, Presentation preparation, Peer review',
-                    'Week 24: Capstone Project Presentation & Evaluation – Presentation to faculty and peers, Feedback and evaluation, Lessons learned and knowledge integration, Certificate award and networking'
-                ],
-                outcome: 'Apply learning through capstone project and build professional network.'
-            }
-        ],
-        launchSchedule: {
-            admissionOpening: 'TBD',
-            applicationClosure: 'TBD',
-            selectedCandidates: 'TBD',
-            lastDateFeeSubmission: 'TBD',
-            programOrientation: 'TBD',
-            classStart: 'TBD',
-            campusVisit: 'At the beginning of course (3 days)',
-            programCompletion: 'TBD'
-        },
-        feeStructure: {
-            applicationFee: { label: 'Application Fee', amount: 'INR 2,000 + GST as applicable' },
-            programFee: { label: 'Program Fee', amount: 'INR 150,000 (Includes INR 16,500 campus visit charges + Study Material charges) + GST as applicable' },
-            campusVisitFee: { label: 'Campus Visit Fee', amount: '3 days campus visit (INR 2,500/Per day) - Boarding/Lodging costs to be borne by participants' },
-            totalFee: { label: 'Overall Program Fee', amount: 'INR 1,50,000 + GST' }
-        },
-        installments: [
-            { installment: 'Registration', amount: 'INR 2,000 + GST' },
-            { installment: '1st Installment', amount: 'INR 50,000 + GST (Includes Campus fee + Study Material)' },
-            { installment: '2nd Installment', amount: 'INR 50,000 + GST' },
-            { installment: '3rd Installment', amount: 'INR 50,000 + GST' }
-        ],
-        batchSize: {
-            minimum: 30,
-            maximum: 100
-        },
-        selectionCriteria: [
-            'Marks in Class X',
-            'Marks in Class XII',
-            'Marks in Graduation',
-            'Statement of Purpose with work experience documents'
-        ],
-        admissionCriteria: [
-            'Corporate Nominations from Multiple Corporates',
-            'Application + credentials'
-        ],
-        programDelivery: 'The program will have 80 contact hours [6 months] with 3 days campus visit towards the beginning of the course (67 hours online + 13 hours in-campus)',
-        certification: {
-            description: [
-                'Certificate of Successful Completion from DTU New Delhi (Those who clear both Midterm and End Term and maintain minimum 70% attendance)',
-                'Certificate of Participation from DTU New Delhi (Those who fail to clear either the mid term or the end term but maintain the minimum requisite of 70% attendance)',
-                'Those who do not maintain minimum 70% attendance on the overall basis will receive no certification from the Institute'
-            ],
-            issuedBy: 'Delhi Technological University (DTU, New Delhi)'
-        },
-        evaluation: {
-            description: 'Evaluation methodology is at the discretion of the faculty. The methodology includes online exams, case analysis, class contribution and any other component as decided by the respective course faculties.',
-            attendance: 'A minimum of 70% attendance is a prerequisite for the successful completion of this program.',
-            projects: 'The program may require participants to work on individual/group assignments and/or projects. The main objective of such assignments/projects will be to help the participants apply their conceptual learning in the program to actual organizational decision scenarios.',
-            passingCriteria: 'Participants will have to secure the minimum pass marks in the respective evaluation components. Participants who successfully complete the same and satisfy the requisite attendance criteria, will be awarded a certificate of completion. Participants who are unable to clear the evaluation criteria but have the requisite attendance will be awarded a Participation certificate.'
-        },
-        pedagogy: 'This curriculum is structured to provide a comprehensive learning experience through a blend of lectures, case studies, group discussions, and practical exercises. It is designed to equip senior executives and decision-makers with a deep understanding of renewable energy systems, sustainable management, energy transition strategies, and AI-driven analytics in a leadership context. The program emphasizes practical application, enabling participants to develop actionable strategies for implementing renewable energy initiatives, managing ESG and sustainability requirements, and driving organizational innovation. In addition, it fosters peer learning and networking opportunities, allowing participants to share insights, exchange best practices, and build valuable professional connections across industries.',
-        refundPolicy: [
-            'Requests for refund of fees on account of cancellation of enrolment shall be considered only if such requests are received prior to closure of registration or 21 days before the commencement date of program, whichever is earlier.',
-            'In the event of valid requests for refund of fees are received, the first installment paid (joining fee) money shall be refunded after deducting a penalty of INR 5,000/- (Administrative Charges).',
-            'In all other cases, no refund shall be made.'
-        ],
-        importantPoints: [
-            'Boarding and Lodging: Campus stay organized by DTU, New Delhi on a double occupancy basis',
-            'The program will be delivered through Direct-to-Device format',
-            'Program launch dates as well as installment dates are open to change as per requirement',
-            'Corporate Nominations from Multiple Corporates are accepted',
-            'The payment of the registration fee does not mean that you have earned the certification',
-            'The Institute reserves every right to withhold the certification if the stipulated rules and regulations are not followed'
-        ]
-    },
-    {
         id: 'ai',
         enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_apai/sourceCode/',
-        title: 'Advanced Program in Artificial Intelligence',
+        title: 'Advanced Certificate Program in Artificial Intelligence',
         shortTitle: 'AI Programme',
         subtitle: 'Master AI fundamentals and advanced techniques',
         description: 'A comprehensive programme on machine learning, deep learning, and AI applications for industry professionals.',
         duration: '6 Months',
         batch: 'Batch 01',
         startDate: new Date('2026-03-28'),
-        applicationDeadline: '27th March 2026',
         mode: 'Online + 3-day Campus',
         cost: 'INR 1,50,000 + GST',
         applicationFee: 'INR 2,000 + GST',
@@ -207,14 +19,17 @@ export const programmes = [
         serviceProvider: 'Times Edutech and Events Limited (TimesPro)',
         category: 'certificate',
         image: '/images/program/1.png',
+        certificate: '/images/certificates/ai.jpeg',
+        status: 'Coming Soon',
         directors: [
-            { name: 'Prof. S Indu', designation: 'Dean – Digital Education, Delhi Technological University', image: "/public/images/faculty/indu.jpg" },
-            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/public/images/faculty/neeraj.jpg" }
+            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/public/images/faculty/neeraj.jpg" },
+            { name: 'Prof. S Indu', designation: 'Dean – Digital Education, Delhi Technological University', image: "/public/images/faculty/indu.jpg" }
+            
         ],
         faculty: [
+            { name: 'Dr. Dhirendra Kumar ', designation: 'Department of Applied Mathematics, DTU', image: "/public/images/faculty/dhirendra.jpg" },
             { name: 'Dr. Kavinder Singh', designation: 'Department of Computer Science & Engineering, DTU', image: "/public/images/faculty/kavinder.jpeg" },
-            { name: 'Dr. Trasha Gupta', designation: 'Department of Applied Mathematics, DTU', image: "/public/images/faculty/trasha.jpg" },
-            { name: 'Dr. Dhirendra Kumar ', designation: 'Department of Applied Mathematics, DTU', image: "/public/images/faculty/dhirendra.jpg" }
+            { name: 'Dr. Trasha Gupta', designation: 'Department of Applied Mathematics, DTU', image: "/public/images/faculty/trasha.jpg" }
         ],
         highlights: [
             'Certificate from DTU, an Institute of Eminence',
@@ -359,7 +174,7 @@ export const programmes = [
         feeStructure: {
             applicationFee: { label: 'Application Fee', amount: 'INR 2,000 + GST' },
             programFee: { label: 'Program Fee', amount: 'INR 1,50,000 + GST (Including Campus Immersion & accommodation charges)' },
-            totalFee: { label: 'Total Program Fee', amount: 'INR 1,50,000 + GST' }
+            OverallFee: { label: 'Overall Program Fee', amount: 'INR 1,52,000 + GST'}
         },
         installments: [
             { installment: 'Application Fee', dueDate: 'At the time of Application', amount: 'INR 2,000 + GST' },
@@ -367,10 +182,6 @@ export const programmes = [
             { installment: '2nd Installment', dueDate: '27th April 2026 (30 days from programme start)', amount: 'INR 50,000 + GST' },
             { installment: '3rd Installment', dueDate: '27th May 2026 (60 days from programme start)', amount: 'INR 50,000 + GST' }
         ],
-        batchSize: {
-            minimum: 100,
-            maximum: 150
-        },
         programDelivery: 'Online Direct 2 Device (D2D)',
         selectionCriteria: [
             'Selection based on assessment of the profile through data provided in application form',
@@ -409,7 +220,7 @@ export const programmes = [
         ],
         tools: ['Python', 'PyTorch', 'TensorFlow', 'Sklearn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn']
     },
-    {
+        {
         id: 'csr-esg',
         enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_lpce/sourceCode/',
         title: 'Leadership Program in CSR, ESG & Corporate Sustainability',
@@ -419,7 +230,6 @@ export const programmes = [
         duration: '6 Months',
         batch: 'Batch 01',
         startDate: new Date('2026-05-10'),
-        applicationDeadline: '18th April 2026',
         mode: 'Online + 3-day Campus',
         cost: 'INR 1,50,000 + GST',
         applicationFee: 'INR 2,000 + GST',
@@ -427,6 +237,8 @@ export const programmes = [
         serviceProvider: 'Unified Collaboration Services LLP (VCNow)',
         category: 'certificate',
         image: '/images/program/3.png',
+        certificate: '/images/certificates/csr.jpeg',
+        status: 'Coming Soon',
         directors: [
             { name: 'Prof. Amit Mookerjee', designation: 'USME, Delhi Technological University', image: "/images/faculty/amit.jpg"},
             { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.jpg"}
@@ -535,15 +347,13 @@ export const programmes = [
         },
         feeStructure: {
             applicationFee: { label: 'Application Fee', amount: 'INR 2,000 + GST' },
-            programFee: { label: 'Program Fee', amount: 'INR 1,35,500 + GST' },
-            studyMaterial: { label: 'Study Material Fee', amount: 'INR 10,000 + GST' },
-            campusVisit: { label: 'Campus Visit Fee (3 days, includes study material)', amount: 'INR 15,000 + GST' },
-            totalFee: { label: 'Total Fee (excluding application fee)', amount: 'INR 1,50,000 + GST' }
+            programFee: { label: 'Program Fee', amount: 'INR 1,50,000 + GST (Including Campus Immersion & accommodation charges)' },
+            OverallFee: { label: 'Overall Program Fee', amount: 'INR 1,52,000 + GST'}
         },
         installments: [
             { installment: '1st Installment', dueDate: 'Within 7-10 days of offer letter (April 24, 2026)', amount: 'INR 50,000 + GST' },
             { installment: '2nd Installment', dueDate: '10th June 2026', amount: 'INR 50,000 + GST' },
-            { installment: '3rd Installment', dueDate: '10th July 2026', amount: 'INR 50,000 + GST (Incl. Campus Fees)' }
+            { installment: '3rd Installment', dueDate: '10th July 2026', amount: 'INR 50,000 + GST' }
         ],
         certification: {
             description: [
@@ -572,6 +382,188 @@ export const programmes = [
             'The Institute reserves every right to withhold the certification if the stipulated rules and regulations are not followed',
             'DTU does not provide placement assistance to Executive Education Candidates',
             'DTU will provide "DTU Executive Education" alumni status to all participants successfully completing the programme'
+        ]
+    },
+    {
+        id: 'renewable-energy',
+        enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_aprse/sourceCode/',
+        title: 'Senior Management Program in Renewable Energy Strategy and Sustainable Leadership',
+        shortTitle: 'Renewable Energy',
+        subtitle: 'Strategic energy management and sustainable leadership for the future',
+        description: 'Learn renewable energy technologies, sustainable energy management, and policy frameworks for a greener future.',
+        duration: '6 Months',
+        batch: 'Batch 01',
+        startDate: new Date('2026-01-10'),
+        mode: 'Online + 3-day Campus',
+        cost: 'INR 1,50,000 + GST',
+        applicationFee: 'INR 2,000 + GST',
+        provider: 'DTU Centre for Executive Programmes',
+        serviceProvider: 'DTU Centre for Executive Programmes',
+        category: 'certificate',
+        image: '/images/program/2.png',
+        certificate: '/images/certificates/aprse.jpeg',
+        status: 'Coming Soon',
+        directors: [
+            { name: 'Prof. M. Rizwan', designation: 'Department of Electrical Engineering, DTU', image: '/images/faculty/rizwan.jpg', href: "https://dtu.ac.in/modules/facilities/people/faculty/view.php?uname=rizwan"}
+        ],
+        faculty: [
+            { name: 'Prof. M. Rizwan', designation: 'Department of Electrical Engineering, DTU', image: "/images/faculty/rizwan.jpg" }
+        ],
+        highlights: [
+            'Certificate from DTU, an Institute of Eminence',
+            'Learn from DTU faculty and industry experts',
+            'AI and data analytics for energy optimization',
+            '3-day Campus Visit at DTU Delhi',
+            'Network with energy and sustainability professionals',
+            'Comprehensive renewable energy frameworks'
+        ],
+        schedule: {
+            totalHours: 80,
+            liveHours: 67,
+            campusHours: 13,
+            tutorialHours: 'NA',
+            projectMentorship: 'NA',
+            campusImmersion: '3-day Campus Visit at the beginning of the course',
+            timing: 'Frequency: Once in a week (Sunday, 9:00 AM - 12:00 PM IST)'
+        },
+        eligibility: "For Indian Participants: Graduates (10+2+3) or Diploma Holders (only 10+2+3) from a recognized university (UGC/AICTE/DEC/AIU/State Government) in any discipline. For International Participants: Graduation or equivalent degree from any recognized University or Institution in their respective country.",
+        experience: 'Working Professionals with 5 years of work experience',
+        targetAudience: [
+            'Senior Managers and Heads of Energy or Sustainability Departments – responsible for designing and implementing renewable energy and sustainability strategies',
+            'Compliance and Risk Officers – involved in regulatory compliance, energy policies, and risk assessment related to renewable energy projects',
+            'Sustainability Professionals – managing environmental and energy impact initiatives',
+            'Business Leaders and Executives – looking to integrate renewable energy and sustainability into strategic decision-making',
+            'Corporate Strategy and Governance Leaders – interested in leveraging AI and analytics for energy management and sustainability reporting',
+            'Consultants and Advisors – working on renewable energy, sustainability, or ESG projects across industries',
+            'Board Members and C-Suite Executives – aiming to drive organizational change and leadership in sustainable energy practices'
+        ],
+        experienceLevel: '5–20+ years in corporate, energy, infrastructure, government, or non-profit sectors with exposure to energy management, sustainability, compliance, or strategic leadership.',
+        objectives: [
+            'The Senior Management Program in Renewable Energy Strategy and Sustainable Leadership is designed to equip senior executives with the knowledge and skills to strategically manage and lead renewable energy initiatives.',
+            'Participants will gain expertise in renewable energy systems, sustainable management practices, and energy transition strategies, while learning to leverage AI and data analytics for energy optimization, performance monitoring, and ESG reporting.',
+            'The program enables executives to formulate and implement sustainable energy projects, ensure compliance with national and international policies and ESG standards, drive cross-functional organizational change, and foster innovation in renewable energy technologies and corporate sustainability, thereby creating long-term value and impactful business outcomes.'
+        ],
+        modules: [
+            {
+                title: 'Module 1: Foundations of Renewable Energy & Sustainable Leadership',
+                topics: [
+                    'Week 1: Introduction to Renewable Energy & Energy Transition – Global energy scenario and trends, Conventional vs renewable energy sources, Drivers of energy transition, Challenges and opportunities in renewable energy adoption',
+                    'Week 2: Principles of Sustainable Leadership – Leadership competencies for sustainability, ESG frameworks and corporate governance, Role of leaders in energy transition, Decision-making for sustainable outcomes',
+                    'Week 3: Overview of Renewable Energy Technologies – Solar energy systems and photovoltaic technologies, Wind energy: onshore and offshore, Hydro and biomass energy systems, Energy storage and hybrid systems',
+                    'Week 4: Policy, Regulations, and Compliance in Renewable Energy – National and international policies, Incentives, subsidies, and renewable energy certificates, Regulatory frameworks and compliance requirements, Green building and sustainability certifications'
+                ],
+                outcome: 'Understand renewable energy fundamentals, sustainable leadership principles, and regulatory frameworks.'
+            },
+            {
+                title: 'Module 2: Renewable Energy Strategy & Planning',
+                topics: [
+                    'Week 5: Strategic Energy Management & Planning – Corporate energy strategy formulation, Energy audit and baseline assessment, Integration of renewables in organizational strategy, Long-term energy planning',
+                    'Week 6: Energy Economics and Financial Modeling – Cost-benefit analysis of renewable projects, Project financing models and risk assessment, ROI calculations for renewable energy investments, Budgeting and financial planning',
+                    'Week 7: Project Development and Implementation – Feasibility studies and site assessment, Technology selection and design considerations, Project lifecycle management, Procurement and vendor management',
+                    'Week 8: Risk Management and ESG Integration – Identifying technical, financial, and regulatory risks, ESG alignment in project planning, Sustainability impact assessment, Mitigation strategies and contingency planning'
+                ],
+                outcome: 'Develop strategic planning skills for renewable energy projects, including financial modeling and risk management.'
+            },
+            {
+                title: 'Module 3: AI & Analytics in Renewable Energy',
+                topics: [
+                    'Week 9: Introduction to AI and Big Data for Energy – Role of AI in renewable energy, Machine learning applications in energy forecasting, Predictive analytics for energy optimization, Big data in energy management',
+                    'Week 10: AI-Driven Energy Management and Optimization – Smart grids and microgrids, Demand forecasting and load management, Energy efficiency optimization, AI-enabled monitoring systems',
+                    'Week 11: Data Visualization and ESG Reporting – KPI definition and monitoring, Dashboards and reporting tools, ESG performance tracking, Visualization for decision-making',
+                    'Week 12: Case Studies in AI-Enabled Renewable Energy – Global success stories, Lessons learned from AI integration, Challenges in implementation, Group discussion and analysis'
+                ],
+                outcome: 'Apply AI and data analytics for energy management, optimization, and ESG reporting.'
+            },
+            {
+                title: 'Module 4: Sustainable Innovation & Leadership',
+                topics: [
+                    'Week 13: Innovation in Renewable Energy Technologies – Emerging technologies and R&D trends, Innovation frameworks for energy solutions, Case studies of successful innovations, Identifying business opportunities',
+                    'Week 14: Corporate Strategy for Sustainable Energy – Aligning renewable energy initiatives with business goals, Strategic roadmap for energy transition, Policy and regulatory considerations in strategy, Stakeholder engagement',
+                    'Week 15: Change Management in Energy Transition – Driving adoption across teams, Overcoming resistance to change, Communication strategies for stakeholders, Organizational readiness assessment',
+                    'Week 16: Leadership for ESG and Sustainability – Ethical leadership practices, Driving culture change, Corporate responsibility and accountability, Leading sustainable initiatives'
+                ],
+                outcome: 'Master sustainable innovation, corporate strategy alignment, and change management for energy transition.'
+            },
+            {
+                title: 'Module 5: Advanced Applications & Integration',
+                topics: [
+                    'Week 17: Smart Energy Solutions and Green Infrastructure – Microgrids and decentralized energy systems, Green buildings and energy-efficient operations, IoT applications in energy management, Case studies of smart energy integration',
+                    'Week 18: Renewable Energy Project Financing & Investment – Funding models and investment strategies, Green bonds and PPP projects, Risk-return analysis, Investor engagement and reporting',
+                    'Week 19: Performance Metrics and KPIs – Measuring efficiency and sustainability outcomes, ESG metrics and reporting standards, Benchmarking and continuous improvement, Tools for performance monitoring',
+                    'Week 20: Cross-Functional Collaboration and Strategy Execution – Coordinating operations, finance, and HR teams, Aligning organizational functions with energy strategy, Execution frameworks and project monitoring, Communication and stakeholder management'
+                ],
+                outcome: 'Integrate advanced applications, financing strategies, and cross-functional collaboration for renewable energy projects.'
+            },
+            {
+                title: 'Module 6: Capstone Project & Integration',
+                topics: [
+                    'Week 21: Project Planning & Data Collection – Defining project objectives and KPIs, Data collection methodologies, Stakeholder mapping, Project scoping',
+                    'Week 22: AI-Driven Analytics & Strategy Formulation – Data analysis using AI tools, Deriving insights and forecasting outcomes, Strategy formulation based on analytics, Integration with corporate objectives',
+                    'Week 23: Recommendations & Report Preparation – Developing actionable recommendations, Drafting project report, Presentation preparation, Peer review',
+                    'Week 24: Capstone Project Presentation & Evaluation – Presentation to faculty and peers, Feedback and evaluation, Lessons learned and knowledge integration, Certificate award and networking'
+                ],
+                outcome: 'Apply learning through capstone project and build professional network.'
+            }
+        ],
+        launchSchedule: {
+            admissionOpening: 'TBD',
+            applicationClosure: 'TBD',
+            selectedCandidates: 'TBD',
+            lastDateFeeSubmission: 'TBD',
+            programOrientation: 'TBD',
+            classStart: 'TBD',
+            campusVisit: 'At the beginning of course (3 days)',
+            programCompletion: 'TBD'
+        },
+        feeStructure: {
+            applicationFee: { label: 'Application Fee', amount: 'INR 2,000 + GST' },
+            programFee: { label: 'Program Fee', amount: 'INR 1,50,000 + GST (Including Campus Immersion & accommodation charges)' },
+            OverallFee: { label: 'Overall Program Fee', amount: 'INR 1,52,000 + GST'}
+        },
+        installments: [
+            { installment: 'Registration', amount: 'INR 2,000 + GST' },
+            { installment: '1st Installment', amount: 'INR 50,000 + GST (Includes Campus fee + Study Material)' },
+            { installment: '2nd Installment', amount: 'INR 50,000 + GST' },
+            { installment: '3rd Installment', amount: 'INR 50,000 + GST' }
+        ],
+        selectionCriteria: [
+            'Marks in Class X',
+            'Marks in Class XII',
+            'Marks in Graduation',
+            'Statement of Purpose with work experience documents'
+        ],
+        admissionCriteria: [
+            'Corporate Nominations from Multiple Corporates',
+            'Application + credentials'
+        ],
+        programDelivery: 'The program will have 80 contact hours [6 months] with 3 days campus visit towards the beginning of the course (67 hours online + 13 hours in-campus)',
+        certification: {
+            description: [
+                'Certificate of Successful Completion from DTU New Delhi (Those who clear both Midterm and End Term and maintain minimum 70% attendance)',
+                'Certificate of Participation from DTU New Delhi (Those who fail to clear either the mid term or the end term but maintain the minimum requisite of 70% attendance)',
+                'Those who do not maintain minimum 70% attendance on the overall basis will receive no certification from the Institute'
+            ],
+            issuedBy: 'Delhi Technological University (DTU, New Delhi)'
+        },
+        evaluation: {
+            description: 'Evaluation methodology is at the discretion of the faculty. The methodology includes online exams, case analysis, class contribution and any other component as decided by the respective course faculties.',
+            attendance: 'A minimum of 70% attendance is a prerequisite for the successful completion of this program.',
+            projects: 'The program may require participants to work on individual/group assignments and/or projects. The main objective of such assignments/projects will be to help the participants apply their conceptual learning in the program to actual organizational decision scenarios.',
+            passingCriteria: 'Participants will have to secure the minimum pass marks in the respective evaluation components. Participants who successfully complete the same and satisfy the requisite attendance criteria, will be awarded a certificate of completion. Participants who are unable to clear the evaluation criteria but have the requisite attendance will be awarded a Participation certificate.'
+        },
+        pedagogy: 'This curriculum is structured to provide a comprehensive learning experience through a blend of lectures, case studies, group discussions, and practical exercises. It is designed to equip senior executives and decision-makers with a deep understanding of renewable energy systems, sustainable management, energy transition strategies, and AI-driven analytics in a leadership context. The program emphasizes practical application, enabling participants to develop actionable strategies for implementing renewable energy initiatives, managing ESG and sustainability requirements, and driving organizational innovation. In addition, it fosters peer learning and networking opportunities, allowing participants to share insights, exchange best practices, and build valuable professional connections across industries.',
+        refundPolicy: [
+            'Requests for refund of fees on account of cancellation of enrolment shall be considered only if such requests are received prior to closure of registration or 21 days before the commencement date of program, whichever is earlier.',
+            'In the event of valid requests for refund of fees are received, the first installment paid (joining fee) money shall be refunded after deducting a penalty of INR 5,000/- (Administrative Charges).',
+            'In all other cases, no refund shall be made.'
+        ],
+        importantPoints: [
+            'Boarding and Lodging: Campus stay organized by DTU, New Delhi on a double occupancy basis',
+            'The program will be delivered through Direct-to-Device format',
+            'Program launch dates as well as installment dates are open to change as per requirement',
+            'Corporate Nominations from Multiple Corporates are accepted',
+            'The payment of the registration fee does not mean that you have earned the certification',
+            'The Institute reserves every right to withhold the certification if the stipulated rules and regulations are not followed'
         ]
     },
 ];

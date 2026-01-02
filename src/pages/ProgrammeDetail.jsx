@@ -335,41 +335,44 @@ const ProgrammeDetail = () => {
                                 </ul>
                             </motion.section>
                         )}
+{/* Certification */}
+{programme.certification && (
+    <motion.section
+        className="content-card"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.55 }}
+    >
+        <h2>Certification</h2>
 
-                        {/* Certification */}
-                        {programme.certification && (
-                            <motion.section
-                                className="content-card"
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.55 }}
-                            >
-                                <h2>Certification</h2>
-                                <ul className="certification-list">
-                                    {programme.certification.description.map((item, index) => (
-                                        <li key={index}>{item}</li>
-                                    ))}
-                                </ul>
-                                <p className="cert-issuer"><strong>Certificate Issued By:</strong> {programme.certification.issuedBy}</p>
-                                {programme.certification.bonus && (
-                                    <p className="cert-bonus"><strong>Bonus:</strong> {programme.certification.bonus}</p>
-                                )}
-                                <div className="certificate-sample">
-                                    <div className="cert-header">
-                                        <h3>Delhi Technological University</h3>
-                                        <p>(DTU, New Delhi)</p>
-                                    </div>
-                                    <div className="cert-body">
-                                        <p>This is to certify that</p>
-                                        <p className="cert-name">Mr./Ms. Name Of The Participant</p>
-                                        <p>has successfully completed the</p>
-                                        <p className="cert-programme">{programme.title}</p>
-                                        <p className="cert-dates">held from {formatDate(programme.startDate)} onwards</p>
-                                        <p>by the Delhi Technological University.</p>
-                                    </div>
-                                </div>
-                            </motion.section>
-                        )}
+        <ul className="certification-list">
+            {programme.certification.description.map((item, index) => (
+                <li key={index}>{item}</li>
+            ))}
+        </ul>
+
+        <p className="cert-issuer">
+            <strong>Certificate Issued By:</strong> {programme.certification.issuedBy}
+        </p>
+
+        {programme.certification.bonus && (
+            <p className="cert-bonus">
+                <strong>Bonus:</strong> {programme.certification.bonus}
+            </p>
+        )}
+
+        {/* Certificate Image */}
+        {programme.certificate && (
+            <div className="certificate-sample">
+                <img
+                    src={programme.certificate}
+                    alt={`${programme.title} Certificate`}
+                    className="certificate-image"
+                />
+            </div>
+        )}
+    </motion.section>
+)}
 
                         {/* Eligibility */}
                         <motion.section
@@ -384,20 +387,6 @@ const ProgrammeDetail = () => {
                                 <p className="experience-req"><strong>Experience:</strong> {programme.experience}</p>
                             )}
                         </motion.section>
-
-                        {/* Batch Size */}
-                        {programme.batchSize && (
-                            <motion.section
-                                className="content-card"
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.5, delay: 0.65 }}
-                            >
-                                <h2>Batch Size</h2>
-                                <p><strong>Minimum:</strong> {programme.batchSize.minimum} participants</p>
-                                <p><strong>Maximum:</strong> {programme.batchSize.maximum} participants</p>
-                            </motion.section>
-                        )}
 
                         {/* Program Delivery */}
                         {programme.programDelivery && (
@@ -584,13 +573,6 @@ const ProgrammeDetail = () => {
                         transition={{ duration: 0.5, delay: 0.3 }}
                     >
                         <div className="sidebar-card">
-                            <div className="sidebar-header">
-                                <span className="dtu-badge">DTU</span>
-                                <div className="nirf-rank">
-                                    <span className="rank">#29</span>
-                                    <p>NIRF 2024 (Engineering)</p>
-                                </div>
-                            </div>
                             <h3>{programme.title}</h3>
                             <p className="sidebar-subtitle">{programme.subtitle}</p>
 
@@ -602,10 +584,6 @@ const ProgrammeDetail = () => {
                                 <div className="info-row">
                                     <span>Start Date:</span>
                                     <span>{formatDate(programme.startDate)}</span>
-                                </div>
-                                <div className="info-row">
-                                    <span>Application Deadline:</span>
-                                    <span>{programme.applicationDeadline || 'TBD'}</span>
                                 </div>
                                 <div className="info-row">
                                     <span>Programme Type:</span>

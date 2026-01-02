@@ -89,7 +89,7 @@ const Footer = () => {
 
                         {/* Partners */}
                         <div className="footer-column">
-                            <h4 className="footer-column-title">PARTNERS</h4>
+                            <h4 className="footer-column-title">EMPANELLED COMPANIES</h4>
                             <ul className="footer-link-list">
                                 {companyLinks.map((link, index) => (
                                     <li key={index}>
@@ -115,16 +115,16 @@ const Footer = () => {
 
                             {/* Social Icons */}
                             <div className="social-icons">
-                                <a rel="noopener noreferrer" className="social-icon facebook" aria-label="Facebook">
-                                    <svg viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                                    </svg>
-                                </a>
                                 <a href="https://www.linkedin.com/company/ctel-dtu/" target="_blank" rel="noopener noreferrer" className="social-icon linkedin" aria-label="LinkedIn">
                                     <svg viewBox="0 0 24 24" fill="currentColor">
                                         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                                         <rect x="2" y="9" width="4" height="12" />
                                         <circle cx="4" cy="4" r="2" />
+                                    </svg>
+                                </a>
+                                {/* <a rel="noopener noreferrer" className="social-icon facebook" aria-label="Facebook">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                                     </svg>
                                 </a>
                                 <a rel="noopener noreferrer" className="social-icon twitter" aria-label="X/Twitter">
@@ -138,7 +138,7 @@ const Footer = () => {
                                         <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
                                         <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
                                     </svg>
-                                </a>
+                                </a> */}
                             </div>
                         </div>
                     </motion.div>
@@ -148,7 +148,7 @@ const Footer = () => {
             {/* Copyright Bar */}
             <div className="footer-bottom">
                 <div className="container footer-bottom-content">
-                    <p>©️ Copyright CTEL DTU. All Rights Reserved. Developed & Maintained by Team CTEL DTU | (Website Launched on 25-12-2025) Last Updated: 25-12-2025</p>
+                    <p>©️ Copyright CTEL DTU. All Rights Reserved. Developed & Maintained by Team CTEL DTU | (Website Launched on 25-12-2025) Last Updated: 01-01-2026</p>
                     <div className="footer-bottom-actions">
                         <button className="scroll-top-btn" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} aria-label="Scroll to top">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

@@ -203,7 +203,7 @@ const Home = () => {
                         transition={{ duration: 0.6 }}
                     >
                         <div>
-                            <h2>Online Certificate Programmes</h2>
+                            <h2>Certificate Programmes</h2>
                         </div>
                         <Link to="/programmes" className="btn btn-primary">
                             View All Programmes
@@ -228,13 +228,11 @@ const Home = () => {
                                 <Link to={`/programme/${programme.id}`}>
                                     <div className="programme-image">
                                         <img src={programme.image} alt={programme.title} loading="lazy" />
-                                        <span className="programme-badge">{programme.provider}</span>
                                     </div>
                                     <div className="programme-body">
                                         <h3>{programme.title}</h3>
                                         <p className="programme-duration">{programme.duration}</p>
                                         <p className="programme-description">{programme.description}</p>
-                                        <p className="programme-provider">{programme.serviceProvider}</p>
                                     </div>
                                 </Link>
                             </motion.article>
