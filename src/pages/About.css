@@ -1,0 +1,159 @@
+.about-page {
+    min-height: 100vh;
+}
+
+.about-hero {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about-hero h1 {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+.about-hero .subtitle {
+    color: var(--accent-gold);
+    font-size: 1.25rem;
+}
+
+.about-content {
+    background: var(--white);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .about-content {
+        padding: 3rem;
+    }
+}
+
+.content-section {
+    margin-bottom: 2.5rem;
+}
+
+.content-section h2 {
+    color: var(--gray-900);
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+}
+
+.content-section p {
+    color: var(--gray-700);
+    line-height: 1.8;
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.service-card {
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-normal);
+}
+
+.service-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.service-blue {
+    background-color: #EFF6FF;
+}
+
+.service-blue h3 {
+    color: #1E40AF;
+}
+
+.service-blue p {
+    color: var(--gray-700);
+}
+
+.service-green {
+    background-color: #ECFDF5;
+}
+
+.service-green h3 {
+    color: #166534;
+}
+
+.service-green p {
+    color: var(--gray-700);
+}
+
+.service-purple {
+    background-color: #F5F3FF;
+}
+
+.service-purple h3 {
+    color: #5B21B6;
+}
+
+.service-purple p {
+    color: var(--gray-700);
+}
+
+.service-orange {
+    background-color: #FFF7ED;
+}
+
+.service-orange h3 {
+    color: #C2410C;
+}
+
+.service-orange p {
+    color: var(--gray-700);
+}
+
+/* Why List */
+.why-list {
+    list-style: disc;
+    padding-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.why-list li {
+    color: var(--gray-700);
+    line-height: 1.6;
+}
+
+/* Contact Box */
+.contact-box {
+    background-color: var(--gray-100);
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+    margin-top: 2rem;
+}
+
+.contact-box h3 {
+    color: var(--gray-900);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.contact-box p {
+    color: var(--gray-700);
+    margin-bottom: 0.5rem;
+}
