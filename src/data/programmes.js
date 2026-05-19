@@ -1,17 +1,16 @@
 export const programmes = [
     {
-        id: 'ai',
+        id: 'advanced-certificate-program-in-artificial-intelligence',
         enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_apai/sourceCode/',
-        brochure: 'https://drive.google.com/file/d/1cUWmhlww69gHGCcWRbTqXCP9GfRE4DEh/view?usp=sharing',
+        enquireLink: 'https://timespro.com/executive-education/dtu-advanced-certificate-program-in-artificial-intelligence?utm_source=Institute&utm_campaign=DTU_ACPAI_01_Institute_P-01880',
         title: 'Advanced Certificate Program in Artificial Intelligence',
         shortTitle: 'AI Programme',
         subtitle: 'Master AI fundamentals and advanced techniques',
         description: 'A comprehensive programme on machine learning, deep learning, and AI applications for industry professionals.',
         duration: '6 Months',
         batch: 'Batch 01',
-        startDate: new Date('2026-03-28'),
-        mode: 'Online + 3-day Campus',
-        cost: 'INR 1,50,000 + GST',
+        mode: 'Online + 1-day Campus',
+        cost: 'INR 1,10,000 + GST',
         applicationFee: 'INR 2,000 + GST',
         provider: 'Times Edutech and Events Limited (TimesPro)',
         serviceProvider: 'Times Edutech and Events Limited (TimesPro)',
@@ -19,7 +18,7 @@ export const programmes = [
         image: '/images/program/1.png',
         certificate: '/images/certificates/ai.jpeg',
         status: 'Live',
-        applicationDeadline: '30th April, 2026',
+        applicationDeadline: '30th May, 2026',
         directors: [
             { name: 'Prof. S Indu', designation: 'Dean – Digital Education, Delhi Technological University', image: "/images/faculty/indu.jpg" },
             { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.png" }
@@ -34,7 +33,6 @@ export const programmes = [
             'Certificate from DTU, an Institute of Eminence',
             'Learn from DTU faculty and industry experts',
             'Hands-on projects with real-world datasets',
-            '3-day Campus Immersion at DTU Delhi',
             'Network with AI professionals and peers',
             'Guest Lectures by Industry experts',
             'Covers latest topics such as Generative AI'
@@ -44,7 +42,7 @@ export const programmes = [
             liveHours: 80,
             selfHours: 30,
             handsOnTutorials: 'Included in the hours above',
-            campusImmersion: '3-day Campus Immersion (20 hours)',
+            campusImmersion: '1-day Campus Immersion (optional)',
             timing: 'Saturday, 6:30 PM - 9:40 PM IST (Session 1: 6:30 PM - 8:00 PM, Break: 8:00 PM - 8:10 PM, Session 2: 8:10 PM - 9:40 PM)'
         },
         eligibility: "Graduates & Postgraduates from Engineering, Technology, CS, IT, Mathematics. Professionals with 1+ years of work experience in tech or related domains",
@@ -164,19 +162,15 @@ export const programmes = [
         ],
         capstoneProject: 'Build a recommender system using CNN, LSTM, GNN or hybrid AI pipelines',
         pedagogy: "It's a mix of classroom teaching, live examples, peer discussions, quizzes, assessments and context based case studies. Each lecture is accompanied by a hands-on demo session along with a student project. There will be doubt clearance and discussion sessions during and after the programme as well.",
-        launchSchedule: {
-            ProgrammeStartDate: '28th March 2026',
-            ProgrammeEndDate: 'August 2026'
-        },
         feeStructure: {
             applicationFee: { label: 'Application Fee', amount: 'INR 2,000 + GST' },
-            programFee: { label: 'Program Fee', amount: 'INR 1,50,000 + GST (Including Campus Immersion & accommodation charges)' }
+            programFee: { label: 'Program Fee', amount: 'INR 1,10,000 + GST' }
         },
         installments: [
             { installment: 'Application Fee', dueDate: 'At the time of Application', amount: 'INR 2,000 + GST' },
-            { installment: '1st Installment', dueDate: 'Within one week of offer rollout', amount: 'INR 50,000 + GST' },
-            { installment: '2nd Installment', dueDate: '27th April 2026 (30 days from programme start)', amount: 'INR 50,000 + GST' },
-            { installment: '3rd Installment', dueDate: '27th May 2026 (60 days from programme start)', amount: 'INR 50,000 + GST' }
+            { installment: '1st Installment', dueDate: 'Within one week of offer rollout', amount: 'INR 37,000 + GST' },
+            { installment: '2nd Installment', dueDate: 'By 6th October, 2026', amount: 'INR 37,000 + GST' },
+            { installment: '3rd Installment', dueDate: 'By 6th November, 2026', amount: 'INR 36,000 + GST' }
         ],
         programDelivery: 'Direct-to-Device (D2D) interactive live classes',
         selectionCriteria: [
@@ -201,7 +195,6 @@ export const programmes = [
             attendance: 'Minimum 75% marks and 75% attendance required for certification',
             projects: 'The Programme includes hands-on demo sessions, student projects for each module, and a final course project.'
         },
-        inCampusModules: '3 days (20 hours) of campus immersion at the end of the programme (optional for the learners to attend)',
         refundPolicy: [
             'Requests for refund of fees on account of cancellation of enrolment shall be considered only if such requests are received prior to closure of registration or 21 days before the commencement date of program, whichever is earlier.',
             'In the event of valid requests for refund of fees are received, the first installment paid (joining fee) money shall be refunded after deducting a penalty of INR 5,000/- (Administrative Charges).',
@@ -222,14 +215,13 @@ export const programmes = [
         enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_lpce/sourceCode/',
         brochure: 'https://drive.google.com/file/d/1aOBRMYjKkREuH71-8F89jxfqwcHWM7QL/view?usp=sharing',
         enquireLink: 'https://learn.vcnow.in/l/dtu-leadership-programme-in-csr-esg-corporate-sustainability/?utm_source=Google&utm_campaign=DTU-CSR-ESG-CS-Search&utm_adgroup=CSR&utm_content=csr-program_ad01&utm_term=esg%20certification&utm_source=google&utm_medium=cpc&utm_campaign=DTU-CSR-ESG-CS-Search&hsa_acc=5757883842&hsa_cam=23502813720&hsa_grp=191999421069&hsa_ad=794773280364&hsa_src=g&hsa_tgt=kwd-386303726332&hsa_kw=esg%20certification&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=23502813720&gbraid=0AAAAADO5Pap8C7qPOS5PQMqI3bRQPMxIH&gclid=Cj0KCQjw1ZjOBhCmARIsADDuFTCm0EUHohtslAliwXNd_Kt88HSsnJq6D3WNwI_As_J9PuiNJqFGmPwaAhfcEALw_wcB',
-        contactText: 'For further details, please contact the Program Manager, <strong>Mr. Pritish Mondal</strong>, at <strong>pritish.mondal@vcnow.in</strong> or call him at <strong>9582046898</strong>.',
+        contactText: 'For further details, please contact the Program Manager, <strong>Ms. Shivani Sharma</strong>, at <strong>shivani.sharma@vcnowvcr.com</strong> or call him at <strong>9219078715</strong>.',
         title: 'Leadership Program in CSR, ESG & Corporate Sustainability',
         shortTitle: 'CSR & ESG',
         subtitle: 'Strategic leadership for sustainable business transformation',
         description: 'Build ESG-compliant business models, learn from industry leaders, and drive sustainable business transformation.',
         duration: '6 Months',
         batch: 'Batch 01',
-        startDate: new Date('2026-05-03'),
         mode: 'Online + 3-day Campus',
         cost: 'INR 1,60,000 + GST',
         applicationFee: 'INR 2,000 + GST',
@@ -239,7 +231,7 @@ export const programmes = [
         image: '/images/program/3.png',
         certificate: '/images/certificates/csr.jpeg',
         status: 'Live',
-        applicationDeadline: '30th April, 2026',
+        applicationDeadline: '05th July, 2026',
         directors: [
             { name: 'Prof. Amit Mookerjee', designation: 'USME, Delhi Technological University', image: "/images/faculty/amit.jpg" },
             { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.png" }
@@ -343,24 +335,18 @@ export const programmes = [
         ],
         pedagogy: "The classes for this Program will be delivered through LIVE lectures using Direct to Device (D2D) Technology facilitated by VCNow. The pedagogy comprises of case studies, interactive sessions, quizzes, mid-term and end-term examinations, class participation, project work and group-based presentations, in-class exercises imparted by DTU's faculty to help participants gain knowledge, understanding and hands-on skills to immediately apply their learning in the workplace. Additionally, participants opting for a Certificate of Completion will be assigned project work and presentations that will be evaluated by the faculty in addition to providing individual feedback.",
         launchSchedule: {
-            salesStart: '5th January 2026',
-            applicationClosure: '18th April 2026',
-            selectedCandidatesList: '22nd April 2026',
-            firstInstallmentDate: '24th April 2026',
-            technicalOrientation: '26th April 2026',
-            academicOrientation: '3rd May 2026',
-            finalListAtDTU: '4th May 2026',
-            classStart: '10th May 2026',
-            campusModule: 'TBD (Early stages of the programme)'
+            applicationClosure: '05th July 2026',
+            academicOrientation: '19th July 2026',
+            classStart: '26th July 2026',
         },
         feeStructure: {
             applicationFee: { label: 'Application Fee', amount: 'INR 2,000 + GST' },
             programFee: { label: 'Program Fee', amount: 'INR 1,60,000 + GST' }
         },
         installments: [
-            { installment: '1st Installment', dueDate: 'Within 7-10 days of offer letter', amount: 'INR 55,000 + GST' },
-            { installment: '2nd Installment', dueDate: 'On or before 10 June 2026', amount: 'INR 55,000 + GST' },
-            { installment: '3rd Installment', dueDate: 'On or before 10 July 2026', amount: 'INR 50,000 + GST' }
+            { installment: '1st Installment', dueDate: 'Within 7-10 days of offer letter acceptance', amount: 'INR 55,000 + GST' },
+            { installment: '2nd Installment', dueDate: 'On or before 10th September 2026', amount: 'INR 55,000 + GST' },
+            { installment: '3rd Installment', dueDate: 'On or before 10th November 2026', amount: 'INR 50,000 + GST' }
         ],
         certification: {
             description: [
@@ -394,14 +380,13 @@ export const programmes = [
         enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_aprse/sourceCode/',
         brochure: 'https://drive.google.com/file/d/1guClmh5sz3OJhPldpb1AA7ccIMpr3tP8/view?usp=sharing',
         enquireLink: 'https://learn.vcnow.in/l/dtu-advanced-programme-renewable-sustainable-energy-management/?utm_source=Google&utm_campaign=DTU-Renewable-Sustainable-Search&utm_adgroup=Energy&utm_content=energy-course_ad01&utm_term=renewable%20energy%20management&utm_source=google&utm_medium=cpc&utm_campaign=DTU-Renewable-Sustainable-Search&hsa_acc=5757883842&hsa_cam=23533594450&hsa_grp=189665752261&hsa_ad=795949771373&hsa_src=g&hsa_tgt=kwd-296293607696&hsa_kw=renewable%20energy%20management&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=23533594450&gbraid=0AAAAADO5PapwreXRZVntDtAH1iv1Qb2P2&gclid=Cj0KCQjw1ZjOBhCmARIsADDuFTAYqpiDtDFLc8V3xfo94c_IBiyziyfqxvuYJm9Q1Cx5gq29Ytfwa4saAuc3EALw_wcB',
-        contactText: 'For further details, please contact the Program Manager, <strong>Mr. Pritish Mondal</strong>, at <strong>pritish.mondal@vcnow.in</strong> or call him at <strong>9582046898</strong>.',
+        contactText: 'For further details, please contact the Program Manager, <strong>Ms. Shivani Sharma</strong>, at <strong>shivani.sharma@vcnowvcr.com</strong> or call him at <strong>9219078715</strong>.',
         title: 'Advanced Programme in Renewable & Sustainable Energy Management',
         shortTitle: 'Renewable Energy',
         subtitle: 'Strategic energy management and sustainable leadership for the future',
         description: 'Learn renewable energy technologies, sustainable energy management, and policy frameworks for a greener future.',
         duration: '6 Months',
         batch: 'Batch 01',
-        startDate: new Date('2026-01-10'),
         mode: 'Online + 3-day Campus',
         cost: 'INR 1,60,000 + GST',
         applicationFee: 'INR 2,000 + GST',
@@ -411,7 +396,7 @@ export const programmes = [
         image: '/images/program/2.png',
         certificate: '/images/certificates/aprse.jpeg',
         status: 'Live',
-        applicationDeadline: '30th April, 2026',
+        applicationDeadline: '30th June, 2026',
         directors: [
             { name: 'Prof. M. Rizwan', designation: 'Department of Electrical Engineering, DTU', image: '/images/faculty/rizwan.jpg' },
             { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: '/images/faculty/neeraj.png' }
@@ -523,14 +508,19 @@ export const programmes = [
                 outcome: 'Apply learning through capstone project and build professional network.'
             }
         ],
+        launchSchedule: {
+            applicationClosure: '30th June 2026',
+            academicOrientation: '12th July 2026',
+            classStart: '19th July 2026',
+        },
         feeStructure: {
             applicationFee: { label: 'Application Fee', amount: 'INR 2,000 + GST' },
             programFee: { label: 'Program Fee', amount: 'INR 1,60,000 + GST' }
         },
         installments: [
-            { installment: '1st Installment', dueDate: 'Within 7-10 days of offer letter', amount: 'INR 55,000 + GST' },
-            { installment: '2nd Installment', dueDate: 'On or before 10 July 2026', amount: 'INR 55,000 + GST' },
-            { installment: '3rd Installment', dueDate: 'On or before 10 August 2026', amount: 'INR 50,000 + GST' }
+            { installment: '1st Installment', dueDate: 'Within 7-10 days of offer letter acceptance', amount: 'INR 55,000 + GST' },
+            { installment: '2nd Installment', dueDate: 'On or before 10th September 2026', amount: 'INR 55,000 + GST' },
+            { installment: '3rd Installment', dueDate: 'On or before 10th November 2026', amount: 'INR 50,000 + GST' }
         ],
         selectionCriteria: [
             'Marks in Class X',

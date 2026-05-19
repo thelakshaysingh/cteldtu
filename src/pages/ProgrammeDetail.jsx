@@ -628,10 +628,6 @@ const ProgrammeDetail = () => {
                                     <span>{programme.applicationDeadline || 'TBD'}</span>
                                 </div>
                                 <div className="info-row">
-                                    <span>Start Date:</span>
-                                    <span>{formatDate(programme.startDate)}</span>
-                                </div>
-                                <div className="info-row">
                                     <span>Programme Type:</span>
                                     <span>Online Certificate</span>
                                 </div>
@@ -649,15 +645,15 @@ const ProgrammeDetail = () => {
                                 </div>
                             </div>
 
-                            {programme.enroll && (
+                            {programme.enquireLink && (
                                 <a
-                                    href={programme.enroll}
+                                    href={programme.enquireLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="btn btn-primary full-width"
-                                    title="Enroll Now"
+                                    style={{ marginTop: '1rem' }}
                                 >
-                                    Enroll Now
+                                    Enquire Now
                                 </a>
                             )}
 
@@ -673,6 +669,8 @@ const ProgrammeDetail = () => {
                                 </a>
                             )}
 
+
+
                             {programme.externalLink && (
                                 <a
                                     href={programme.externalLink}
@@ -685,20 +683,58 @@ const ProgrammeDetail = () => {
                                 </a>
                             )}
 
-                            {programme.enquireLink && (
+                            {programme.enroll && (
                                 <a
-                                    href={programme.enquireLink}
+                                    href={programme.enroll}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="btn btn-primary full-width"
-                                    style={{ marginTop: '1rem' }}
+                                    title="Enroll Now"
                                 >
-                                    Enquire Now
+                                    Enroll Now
                                 </a>
                             )}
 
                         </div>
                     </motion.aside>
+                </div>
+            </div>
+
+            {/* Mobile Sticky Footer */}
+            <div className="mobile-sticky-footer">
+                <div className="container">
+                    <div className="sticky-actions">
+                        {programme.brochure && (
+                            <a
+                                href={programme.brochure}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-outline-dark sticky-btn brochure-btn"
+                            >
+                                Brochure
+                            </a>
+                        )}
+                        {programme.enquireLink && (
+                            <a
+                                href={programme.enquireLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-primary sticky-btn"
+                            >
+                                Enquire
+                            </a>
+                        )}
+                        {programme.enroll && (
+                            <a
+                                href={programme.enroll}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-primary sticky-btn"
+                            >
+                                Enroll
+                            </a>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>

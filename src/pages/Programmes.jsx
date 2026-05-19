@@ -96,9 +96,6 @@ const Programmes = () => {
                                             </p>
                                         )}
                                         <span className="status-badge">Status: {programme.status}</span>
-                                        <p className="detail">
-                                            <strong>Start Date:</strong> {formatDate(programme.startDate)}
-                                        </p>
                                         {programme.cost && (
                                             <p className="detail">
                                                 <strong>Programme Fee:</strong> {programme.cost}
