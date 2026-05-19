@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { image } from "framer-motion/client";
 import { href } from "react-router-dom";
 
@@ -5,21 +6,34 @@ export const programmes = [
         {
         id: 'ai',
         enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_apai/sourceCode/',
+=======
+export const programmes = [
+    {
+        id: 'advanced-certificate-program-in-artificial-intelligence',
+        enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_apai/sourceCode/',
+        enquireLink: 'https://timespro.com/executive-education/dtu-advanced-certificate-program-in-artificial-intelligence?utm_source=Institute&utm_campaign=DTU_ACPAI_01_Institute_P-01880',
+>>>>>>> lakshay
         title: 'Advanced Certificate Program in Artificial Intelligence',
         shortTitle: 'AI Programme',
         subtitle: 'Master AI fundamentals and advanced techniques',
         description: 'A comprehensive programme on machine learning, deep learning, and AI applications for industry professionals.',
         duration: '6 Months',
         batch: 'Batch 01',
+<<<<<<< HEAD
         startDate: new Date('2026-03-28'),
         mode: 'Online + 3-day Campus',
         cost: 'INR 1,50,000 + GST',
+=======
+        mode: 'Online + 1-day Campus',
+        cost: 'INR 1,10,000 + GST',
+>>>>>>> lakshay
         applicationFee: 'INR 2,000 + GST',
         provider: 'Times Edutech and Events Limited (TimesPro)',
         serviceProvider: 'Times Edutech and Events Limited (TimesPro)',
         category: 'certificate',
         image: '/images/program/1.png',
         certificate: '/images/certificates/ai.jpeg',
+<<<<<<< HEAD
         status: 'Coming Soon',
         directors: [
             { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/public/images/faculty/neeraj.jpg" },
@@ -30,18 +44,35 @@ export const programmes = [
             { name: 'Dr. Dhirendra Kumar ', designation: 'Department of Applied Mathematics, DTU', image: "/public/images/faculty/dhirendra.jpg" },
             { name: 'Dr. Kavinder Singh', designation: 'Department of Computer Science & Engineering, DTU', image: "/public/images/faculty/kavinder.jpeg" },
             { name: 'Dr. Trasha Gupta', designation: 'Department of Applied Mathematics, DTU', image: "/public/images/faculty/trasha.jpg" }
+=======
+        status: 'Live',
+        applicationDeadline: '30th May, 2026',
+        directors: [
+            { name: 'Prof. S Indu', designation: 'Dean – Digital Education, Delhi Technological University', image: "/images/faculty/indu.jpg" },
+            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.png" }
+
+        ],
+        faculty: [
+            { name: 'Dr. Dhirendra Kumar ', designation: 'Department of Applied Mathematics, DTU', image: "/images/faculty/dhirendra.jpg" },
+            { name: 'Dr. Kavinder Singh', designation: 'Department of Computer Science & Engineering, DTU', image: "/images/faculty/kavinder.jpeg" },
+            { name: 'Dr. Trasha Gupta', designation: 'Department of Applied Mathematics, DTU', image: "/images/faculty/trasha.jpg" }
+>>>>>>> lakshay
         ],
         highlights: [
             'Certificate from DTU, an Institute of Eminence',
             'Learn from DTU faculty and industry experts',
             'Hands-on projects with real-world datasets',
+<<<<<<< HEAD
             '3-day Campus Immersion at DTU Delhi',
+=======
+>>>>>>> lakshay
             'Network with AI professionals and peers',
             'Guest Lectures by Industry experts',
             'Covers latest topics such as Generative AI'
         ],
         schedule: {
             totalHours: 110,
+<<<<<<< HEAD
             campusHours: 20,
             liveHours: 60,
             tutorialHours: 30,
@@ -56,11 +87,28 @@ export const programmes = [
         ],
         objectives: [
             'The Certificate Program in Artificial Intelligence is a comprehensive course that provides participants with a foundational understanding of artificial intelligence, AI tools, algorithms, and their industrial applications.',
+=======
+            liveHours: 80,
+            selfHours: 30,
+            handsOnTutorials: 'Included in the hours above',
+            campusImmersion: '1-day Campus Immersion (optional)',
+            timing: 'Saturday, 6:30 PM - 9:40 PM IST (Session 1: 6:30 PM - 8:00 PM, Break: 8:00 PM - 8:10 PM, Session 2: 8:10 PM - 9:40 PM)'
+        },
+        eligibility: "Graduates & Postgraduates from Engineering, Technology, CS, IT, Mathematics. Professionals with 1+ years of work experience in tech or related domains",
+        targetAudience: [
+            'Engineering, Tech, CS, IT, and Math graduates / postgraduates',
+            'Working professionals with 1+ years of experience in IT, software, analytics,engineering, or related domains',
+            'Anyone looking to break into or upscale within AI/ML, Deep Learning & Data Science',
+        ],
+        objectives: [
+            'The Advanced Certificate Program in Artificial Intelligence is a comprehensive course that provides participants with a foundational understanding of artificial intelligence, AI tools, algorithms, and their industrial applications.',
+>>>>>>> lakshay
             'The course will equip participants with the knowledge and practical skills necessary to proficiently apply machine learning techniques to tackle complex problems across diverse domains such as sales and marketing, medical diagnostics, to sports analytics.',
             'The course is thoughtfully crafted with a fine balance between theory and practice, with a special focus on learners from non-CS backgrounds.',
             'Contemporary industry case studies and practice sessions have been curated to provide hands-on experience of applying advanced machine learning techniques, that are used by leading tech and non-tech companies (e.g., Google, Amazon, Coca-Cola, Flipkart, think tanks, Civil and Mechanical Engineering firms, Power companies, Government agencies, etc.).'
         ],
         keyLearningOutcomes: [
+<<<<<<< HEAD
             'Understanding of machine learning tools, algorithms, and industrial applications',
             'Gain hands-on experience in applying advanced ML techniques through case studies and practice exercises',
             'Understand the working of neural networks and gain the ability to design and implement them using various tools and techniques',
@@ -105,10 +153,53 @@ export const programmes = [
                     'ADAM Optimizer'
                 ],
                 outcome: 'Master probability, statistics, and optimization techniques for ML.'
+=======
+            'Understand and apply machine learning tools, algorithms, and their industrial applications',
+            'Build and deploy ML models for classification, regression, clustering & more',
+            'Implement neural networks, CNNs, RNNs, LSTMs from scratch',
+            'Work with advanced techniques like Generative AI, GANs, VAEs, and GNNs',
+            'Apply AI solutions to real-world cases across healthcare, e-commerce,finance, manufacturing, and beyond',
+            'Evaluate, optimise, and compare multiple ML approaches',
+            'Design AI systems end-to-end using Python, TensorFlow, PyTorch & otherindustry libraries'
+        ],
+        modules: [
+            {
+                title: 'Module 1: AI Literacy & Industry Context',
+                topics: [
+                    'AI Foundations & Industry Reality: Introduction to Artificial Intelligence, Machine Learning, and Deep Learning (AI vs ML vs DL)',
+                    'AI myths vs Reality',
+                    'Real-world AI System',
+                    'Common reasons for AI project failures; Ethical, regulatory, and operational considerations'
+                ],
+                outcome: 'Master AI foundations, understand industry reality, and ethics.'
+            },
+            {
+                title: 'Module 2: Python & Data Thinking for AI',
+                topics: [
+                    'Python programming for Machine Learning: Python syntax and control flow; functions; Python as a data/ML tool',
+                    'NumPy for vectorized computation: Arrays, vectorized computation, dot product, matrix operations; data as vectors and matrices',
+                    'Pandas for dataset handling: Data Frames; indexing and filtering; missing values; feature selection; dataset preparation',
+                    'Data Visualization: Scatter plots, histograms, loss curves, confusion matrices for model understanding',
+                    'Guided Practice: End-to-end data loading, cleaning, visualization, and train–test split; building reusable ML data pipelines'
+                ],
+                outcome: 'Master Python, NumPy, Pandas, and data visualization for AI.'
+            },
+            {
+                title: 'Module 3: Mathematical Foundations for AI/ML',
+                topics: [
+                    'Linear Algebra for ML: Vectors and Matrices, Vector Space and Subspace, System of Linear Equations, The Concept of Rank and Independent Vectors, Inner Product Space, Norms, Positive Definite Matrix, Matrix factorization (EVD, SVD, QR, LR, etc.), Projection and Orthogonality',
+                    'Probability and Statistics for Data science: Random Variables, Distribution and Density Functions, Conditional Probability, Bayes Theorem, Joint Distribution, Concept of Independence Covariance, and Correlation, Introductory Statistical Inference (Likelihood, MAP, etc.), Concept of Entropy, Mutual Information, and KL Divergence',
+                    'Optimization: Function and Derivatives, Gradient Descent, Stochastic Gradient Descents, Convex Optimization, Formulation and Optimality Conditions, ADAM Optimizer',
+                    'Hands-on Demo 1: Linear Algebra using NumPy',
+                    'Optimization with Practical ML Applications'
+                ],
+                outcome: 'Master linear algebra, probability, statistics, and optimization for ML.'
+>>>>>>> lakshay
             },
             {
                 title: 'Module 4: Regression Methods',
                 topics: [
+<<<<<<< HEAD
                     'Simple and Multiple Linear Regression',
                     'Hands-on Demo: SLR/MLR',
                     'Least Squares Approach',
@@ -116,6 +207,15 @@ export const programmes = [
                     'Hands-on Demo: NLR',
                     'Model Selection, Regularization and Bias-Variance Trade-off',
                     'M2 Project: Regression Application'
+=======
+                    'Basics of Machine Learning Flow: Supervised vs unsupervised learning; regression vs classification; ML workflow',
+                    'Simple and Multiple Linear regression',
+                    'Hands-on Demo 2: SLR/MLR',
+                    'Least squares approach',
+                    'Moving beyond Linearity: Non-linear regression',
+                    'Hands-on Demo 3: NLR',
+                    'Model Selection, Regularization and Bias-Variance Trade-off'
+>>>>>>> lakshay
                 ],
                 outcome: 'Apply regression methods for predictive modeling.'
             },
@@ -123,6 +223,7 @@ export const programmes = [
                 title: 'Module 5: Classification Methods',
                 topics: [
                     'Motivation and Introduction to Classification Problems',
+<<<<<<< HEAD
                     'Logistic Regression with Hands-on Demo',
                     'Decision Trees: Introduction, Random Forests, Bagging, and Boosting',
                     'Hands-on Demo: Random Forests',
@@ -132,12 +233,21 @@ export const programmes = [
                     'Multi-Class Classifiers',
                     'Clustering Methods with Hands-on Demo',
                     'M3 Project: Classification Application',
+=======
+                    'Logistic Regression: Logistic Regression, Hands-on Demo 4: Logistic Regression',
+                    'Decision Tree: Introduction to Decision Trees, Random Forests, Bagging, and Boosting, Hands-on Demo 5: Random Forests, Interpretability of Machine Learning Models',
+                    'Hyperplanes: Concept of Hyperplane Classifier',
+                    'SVM: Support Vector Machines, Kernel SVM, Hands-on Demo 6: SVM, Multi-Class Classifiers',
+                    'Clustering: Clustering Methods: k-Means and hierarchical clustering, Hands-on Demo 7: Clustering',
+                    'Evaluation & Error Analysis: Regression/classification metrics; ROC/PR curves; error analysis; business metric mapping'
+>>>>>>> lakshay
                 ],
                 outcome: 'Master classification algorithms and their applications.'
             },
             {
                 title: 'Module 6: Deep Learning',
                 topics: [
+<<<<<<< HEAD
                     'Neural Networks: Fundamentals of Neural Network and Feedforward Network, Concept of Training and Backpropagation, Hands-on Demo: ANN',
                     'Convolutional Neural Networks: Fundamentals of Convolution, CNN Architecture, Hands-on Demo: CNN',
                     'Recurrent Neural Networks/LSTM: Introduction to Time Series and Sequential Data, Introduction to Language Modeling and NLP, RNN and LSTM/GRU, Hands-on Demo',
@@ -180,6 +290,53 @@ export const programmes = [
             { installment: '3rd Installment', dueDate: '27th May 2026 (60 days from programme start)', amount: 'INR 50,000 + GST' }
         ],
         programDelivery: 'Online Direct 2 Device (D2D)',
+=======
+                    'Neural Networks: Neurons, activations, feedforward networks, backpropagation intuition, Forward/backward pass; training intuition; linking math to learning, Vanishing/exploding gradients; dropout; batch normalization; early stopping; ANN-based classification; evaluation and interpretation; Overfitting, instability, debugging strategies, deployment readiness thinking, Hands-on Demo 8: ANN',
+                    'Convolutional Neural Networks: Fundamentals of Convolution; filters; pooling; spatial feature learning, Convolutional Neural Network Architecture; CNN layer stacks; hierarchical features; parameter efficiency, Feature maps; Grad-CAM; trust and explainability, Hands-on Demo 9: CNN training, evaluation, and interpretability analysis',
+                    'Recurrent Neural Networks/LSTM: Introduction to Time Series and Sequential Data; temporal dependency, Introduction to Language Modeling and NLP, Recurrent Neural Network, LSTM & GRU, NLP Applications: Text summarization; captioning; sequence-to-sequence intuition, Hands-on demo 10'
+                ],
+                outcome: 'Design and implement deep learning models including ANNs, CNNs, and RNNs.'
+            },
+            {
+                title: 'Module 7: Advanced AI & Emerging Techniques',
+                topics: [
+                    'Generative AI: Autoencoders, VAEs, GANs; synthetic data; interpretation and risks',
+                    'Graph Neural Networks: Graph data; message passing; applications in recommendation and networks'
+                ],
+                outcome: 'Master advanced AI techniques like Generative AI and Graph Neural Networks.'
+            },
+            {
+                title: 'Module 8: Capstone Project (Self-Paced)',
+                topics: [
+                    'Industry AI Project: Independent project (e.g., recommender or decision-support system); problem framing, modeling, evaluation, interpretation'
+                ],
+                outcome: 'Apply AI skills to a real-world industry project from end-to-end.'
+            }
+        ],
+        assignments: [
+            'Sentiment Analysis using Logistic Regression',
+            'Comparative performance: Decision Trees vs Random Forest vs XGBoost to identify and reduce customer attrition',
+            'Image Classification with SVM (FashionMNIST)',
+            'Build Neural Networks from scratch',
+            'CNN interpretability using Grad-CAM',
+            'Image & video captioning with LSTMs',
+            'Variational Autoencoder on MNIST',
+            'GAN development for synthetic image generation'
+        ],
+        capstoneProject: 'Build a recommender system using CNN, LSTM, GNN or hybrid AI pipelines',
+        pedagogy: "It's a mix of classroom teaching, live examples, peer discussions, quizzes, assessments and context based case studies. Each lecture is accompanied by a hands-on demo session along with a student project. There will be doubt clearance and discussion sessions during and after the programme as well.",
+        feeStructure: {
+            applicationFee: { label: 'Application Fee', amount: 'INR 2,000 + GST' },
+            programFee: { label: 'Program Fee', amount: 'INR 1,10,000 + GST' }
+        },
+        installments: [
+            { installment: 'Application Fee', dueDate: 'At the time of Application', amount: 'INR 2,000 + GST' },
+            { installment: '1st Installment', dueDate: 'Within one week of offer rollout', amount: 'INR 37,000 + GST' },
+            { installment: '2nd Installment', dueDate: 'By 6th October, 2026', amount: 'INR 37,000 + GST' },
+            { installment: '3rd Installment', dueDate: 'By 6th November, 2026', amount: 'INR 36,000 + GST' }
+        ],
+        programDelivery: 'Direct-to-Device (D2D) interactive live classes',
+>>>>>>> lakshay
         selectionCriteria: [
             'Selection based on assessment of the profile through data provided in application form',
             'Statement of Purpose will form an integral and important part of the selection process'
@@ -190,18 +347,31 @@ export const programmes = [
         ],
         certification: {
             description: [
+<<<<<<< HEAD
                 'Certificate of Completion will be awarded to candidates who score at least 70% marks overall and have a minimum attendance of 70%',
                 'Certificate of Participation will be awarded to candidates who fail to score overall 70% marks but have requisite attendance',
                 'Any participant with less than 70% attendance will receive no certification from the University'
+=======
+                'Issued by Delhi Technological University (DTU, New Delhi)',
+                'Certificate of Completion: For learners scoring 75% or above',
+                'Certificate of Participation: For learners scoring below 75% but with 75% attendance',
+                'No certificate for learners with less than 75% attendance'
+>>>>>>> lakshay
             ],
             issuedBy: 'Delhi Technological University (DTU, New Delhi)'
         },
         evaluation: {
             description: 'MCQ based evaluation (Mid term & End term exam)',
+<<<<<<< HEAD
             attendance: 'A minimum of 70% attendance is a prerequisite for the successful completion of this programme.',
             projects: 'The Programme includes hands-on demo sessions, student projects for each module, and a final course project.'
         },
         inCampusModules: '3 days (20 hours) of campus immersion at the end of the programme (optional for the learners to attend)',
+=======
+            attendance: 'Minimum 75% marks and 75% attendance required for certification',
+            projects: 'The Programme includes hands-on demo sessions, student projects for each module, and a final course project.'
+        },
+>>>>>>> lakshay
         refundPolicy: [
             'Requests for refund of fees on account of cancellation of enrolment shall be considered only if such requests are received prior to closure of registration or 21 days before the commencement date of program, whichever is earlier.',
             'In the event of valid requests for refund of fees are received, the first installment paid (joining fee) money shall be refunded after deducting a penalty of INR 5,000/- (Administrative Charges).',
@@ -217,24 +387,39 @@ export const programmes = [
         ],
         tools: ['Python', 'PyTorch', 'TensorFlow', 'Sklearn', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn']
     },
+<<<<<<< HEAD
         {
         id: 'csr-esg',
         enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_lpce/sourceCode/',
+=======
+    {
+        id: 'csr-esg',
+        enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_lpce/sourceCode/',
+        brochure: 'https://drive.google.com/file/d/1aOBRMYjKkREuH71-8F89jxfqwcHWM7QL/view?usp=sharing',
+        enquireLink: 'https://learn.vcnow.in/l/dtu-leadership-programme-in-csr-esg-corporate-sustainability/?utm_source=Google&utm_campaign=DTU-CSR-ESG-CS-Search&utm_adgroup=CSR&utm_content=csr-program_ad01&utm_term=esg%20certification&utm_source=google&utm_medium=cpc&utm_campaign=DTU-CSR-ESG-CS-Search&hsa_acc=5757883842&hsa_cam=23502813720&hsa_grp=191999421069&hsa_ad=794773280364&hsa_src=g&hsa_tgt=kwd-386303726332&hsa_kw=esg%20certification&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=23502813720&gbraid=0AAAAADO5Pap8C7qPOS5PQMqI3bRQPMxIH&gclid=Cj0KCQjw1ZjOBhCmARIsADDuFTCm0EUHohtslAliwXNd_Kt88HSsnJq6D3WNwI_As_J9PuiNJqFGmPwaAhfcEALw_wcB',
+        contactText: 'For further details, please contact the Program Manager, <strong>Ms. Shivani Sharma</strong>, at <strong>shivani.sharma@vcnowvcr.com</strong> or call him at <strong>9219078715</strong>.',
+>>>>>>> lakshay
         title: 'Leadership Program in CSR, ESG & Corporate Sustainability',
         shortTitle: 'CSR & ESG',
         subtitle: 'Strategic leadership for sustainable business transformation',
         description: 'Build ESG-compliant business models, learn from industry leaders, and drive sustainable business transformation.',
         duration: '6 Months',
         batch: 'Batch 01',
+<<<<<<< HEAD
         startDate: new Date('2026-05-10'),
         mode: 'Online + 3-day Campus',
         cost: 'INR 1,50,000 + GST',
+=======
+        mode: 'Online + 3-day Campus',
+        cost: 'INR 1,60,000 + GST',
+>>>>>>> lakshay
         applicationFee: 'INR 2,000 + GST',
         provider: 'Unified Collaboration Services LLP (VCNow)',
         serviceProvider: 'Unified Collaboration Services LLP (VCNow)',
         category: 'certificate',
         image: '/images/program/3.png',
         certificate: '/images/certificates/csr.jpeg',
+<<<<<<< HEAD
         status: 'Coming Soon',
         directors: [
             { name: 'Prof. Amit Mookerjee', designation: 'USME, Delhi Technological University', image: "/images/faculty/amit.jpg"},
@@ -243,6 +428,23 @@ export const programmes = [
         faculty: [
             { name: 'Prof. Amit Mookerjee', designation: 'USME, Delhi Technological University', image: "/images/faculty/amit.jpg"},
             { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.jpg"}
+=======
+        status: 'Live',
+        applicationDeadline: '05th July, 2026',
+        directors: [
+            { name: 'Prof. Amit Mookerjee', designation: 'USME, Delhi Technological University', image: "/images/faculty/amit.jpg" },
+            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.png" }
+        ],
+        programfaculty: [
+            'Dr. Amandeep Kaur, Faculty member USME , DTU',
+            'Dr. Anurag Chaturvedi, Faculty member USME , DTU',
+            'Dr. Agyeya Tripathi, Deputy Director – Consulting, Agents for Impact; Auditor, Social Audit Network India and UK; ESG and sustainability advisor with experience in India, Europe, Africa and Asia',
+            'Ms. Nisha Dhingra, Company Secretary ONGC Videsh Ltd (OVL) and Director and Co. Secy, ONGC Videsh Rovula (OVRL)',
+            'Prof. Dr. Rajiv Arora, Adjunct Professor USME DTU; Retd Additional Secy, Ministry of Commerce',
+            'Dr. Ritika Chopra, Faculty member USME , DTU', 'Mr. Sameet Gambhir, Co-Chair Corporate Affairs committee of PHDCCI, Member of National Committee on Regulatory Affairs of CII, Sr. Vice President and Group Head Legal, Uflex',
+            'Mr. Shivam Sharma,CS, CA', 'Prof. Surinder S Sur,Adjunct Professor USME DTU',
+            'Dr. Varsha Sahgal, Faculty Member USME DTU',
+>>>>>>> lakshay
         ],
         highlights: [
             'Certificate from DTU, an Institute of Eminence',
@@ -257,7 +459,11 @@ export const programmes = [
             liveHours: 72,
             campusHours: 12,
             campusImmersion: '3-day Campus Immersion towards early stages of the programme',
+<<<<<<< HEAD
             timing: 'Sunday, 9:00 AM - 12:10 PM IST (Once a week for 3 hours)'
+=======
+            timing: 'Sunday, 10:00 AM - 01:00 PM IST (Once a week for 3 hours)'
+>>>>>>> lakshay
         },
         eligibility: "For Indian Participants: Graduates (10+2+3) or Diploma Holders (only 10+2+3) from a recognized university (UGC/AICTE/DEC/AIU/State Government) in any discipline. For International Participants: Graduation or equivalent degree from any recognized University or Institution in their respective country.",
         experience: 'Working Professionals with 5 years of work experience',
@@ -272,66 +478,112 @@ export const programmes = [
             {
                 title: 'Module 1: Foundations of CSR, ESG & Responsible Business Leadership',
                 topics: [
+<<<<<<< HEAD
                     'Week 1: Evolution of CSR & ESG | Triple Bottom Line & Stakeholder Capitalism',
                     'Week 2: Corporate Responsibility in the SDG Era | Ethics, Governance & Accountability',
                     "Week 3: Leadership's Role in Building Sustainable Enterprises | Responsible Decision-Making",
                     'Week 4: CSR & ESG Trends in Emerging Economies | Business Case for Sustainability'
+=======
+                    'Evolution of CSR & ESG | Triple Bottom Line & Stakeholder Capitalism',
+                    'Corporate Responsibility in the SDG Era | Ethics, Governance & Accountability',
+                    "Leadership's Role in Building Sustainable Enterprises | Responsible Decision-Making",
+                    'CSR & ESG Trends in Emerging Economies | Business Case for Sustainability'
+>>>>>>> lakshay
                 ],
                 outcome: 'Understand the foundations of CSR and ESG frameworks, and develop responsible business leadership skills.'
             },
             {
                 title: 'Module 2: Legal, Regulatory & Global ESG Frameworks',
                 topics: [
+<<<<<<< HEAD
                     "Week 5: Companies Act (Section 135), CSR Rules & SEBI's BRSR Requirements",
                     'Week 6: Global ESG Disclosure Frameworks: GRI, SASB, TCFD, CDP, UNGC, TNFD',
                     'Week 7: Voluntary Sustainability Standards: ISO 26000, Fairtrade, FSC | ESG Litigation Risk',
                     'Week 8: Governance Best Practices | Corporate Accountability & Reporting Mandates'
+=======
+                    "Companies Act (Section 135), CSR Rules & SEBI's BRSR Requirements",
+                    'Global ESG Disclosure Frameworks: GRI, SASB, TCFD, CDP, UNGC, TNFD',
+                    'Voluntary Sustainability Standards: ISO 26000, Fairtrade, FSC | ESG Litigation Risk',
+                    'Governance Best Practices | Corporate Accountability & Reporting Mandates'
+>>>>>>> lakshay
                 ],
                 outcome: 'Master legal and regulatory frameworks for CSR and ESG compliance at national and global levels.'
             },
             {
                 title: 'Module 3: Strategic CSR Design, Stakeholder Engagement & Social Impact',
                 topics: [
+<<<<<<< HEAD
                     'Week 9: Community Need Assessment | Impact Gap Analysis & Theory of Change',
                     'Week 10: Stakeholder Mapping, Engagement & CSR-PPP Frameworks',
                     'Week 11: Designing High-Impact CSR Programs (Urban & Rural Focus) | Partnering with NGOs',
                     'Week 12: Social ROI, Impact Assessment, & Outcome Tracking'
+=======
+                    'Community Need Assessment | Impact Gap Analysis & Theory of Change',
+                    'Stakeholder Mapping, Engagement & CSR-PPP Frameworks',
+                    'Designing High-Impact CSR Programs (Urban & Rural Focus) | Partnering with NGOs',
+                    'Social ROI, Impact Assessment, & Outcome Tracking'
+>>>>>>> lakshay
                 ],
                 outcome: 'Design high-impact CSR programs with effective stakeholder engagement and social impact measurement.'
             },
             {
                 title: 'Module 4: ESG Metrics, Reporting & Digital Innovation',
                 topics: [
+<<<<<<< HEAD
                     'Week 13: ESG KPIs, Materiality Mapping & Dashboard Design',
                     'Week 14: Integrated Sustainability Reporting (GRI, SASB, TCFD, BRSR)',
                     'Week 15: ESG Ratings, Greenwashing Prevention & Benchmarking (MSCI, Sustainalytics)',
                     'Week 16: Technology in ESG: Blockchain, AI, and IoT for Compliance & Traceability'
+=======
+                    'ESG KPIs, Materiality Mapping & Dashboard Design',
+                    'Integrated Sustainability Reporting (GRI, SASB, TCFD, BRSR)',
+                    'ESG Ratings, Greenwashing Prevention & Benchmarking (MSCI, Sustainalytics)',
+                    'Technology in ESG: Blockchain, AI, and IoT for Compliance & Traceability'
+>>>>>>> lakshay
                 ],
                 outcome: 'Master ESG metrics, reporting frameworks, and leverage digital innovation for compliance.'
             },
             {
                 title: 'Module 5: Climate Change, Resource Management & Sustainable Finance',
                 topics: [
+<<<<<<< HEAD
                     'Week 17: Net Zero, Carbon Neutrality & Science-Based Targets (SBTi)',
                     'Week 18: Resource Efficiency, Circular Economy & Decarbonization Strategies',
                     'Week 19: Renewable Energy Projects, Nature-Positive Business Models & TNFD',
                     'Week 20: Green Bonds, Climate Finance, ESG Risk in Financial Reporting & Sustainable Investing'
+=======
+                    'Net Zero, Carbon Neutrality & Science-Based Targets (SBTi)',
+                    'Resource Efficiency, Circular Economy & Decarbonization Strategies',
+                    'Renewable Energy Projects, Nature-Positive Business Models & TNFD',
+                    'Green Bonds, Climate Finance, ESG Risk in Financial Reporting & Sustainable Investing'
+>>>>>>> lakshay
                 ],
                 outcome: 'Understand climate change strategies, resource management, and sustainable finance mechanisms.'
             },
             {
+<<<<<<< HEAD
                 title: '3-Day Campus Immersion (Initial Stages of the Program)',
                 topics: [
                     'Executive Strategy Lab: Group Simulations & Live Case Exercises',
                     'Networking with Industry Leaders, Practitioners, and DTU Faculty',
                     'Capstone Project Presentations & Peer Learning',
                     'Industry Expert Sessions & Case Study Discussions'
+=======
+                title: 'Module 6: Global ESG Leadership, Collaboration & Capstone',
+                topics: [
+                    'Cross-sector Collaboration: PPPs, UNDP, World Bank, IFC Models',
+                    'ESG-Aligned Supply Chains | Global Benchmarking | Case Studies (Infosys, Tesla, Mahindra)',
+                    'Innovation in Sustainability: Smart ESG Systems, Bioplastics, CleanTech',
+                    'Strategic ESG Communication, Storytelling for Impact & Capstone Project Preparation & 3-Day Campus Immersion (Networking with Industry Leaders, Practitioners, and DTU Faculty)'
+
+>>>>>>> lakshay
                 ],
                 outcome: 'Apply learning through executive strategy lab and network with industry professionals.'
             }
         ],
         pedagogy: "The classes for this Program will be delivered through LIVE lectures using Direct to Device (D2D) Technology facilitated by VCNow. The pedagogy comprises of case studies, interactive sessions, quizzes, mid-term and end-term examinations, class participation, project work and group-based presentations, in-class exercises imparted by DTU's faculty to help participants gain knowledge, understanding and hands-on skills to immediately apply their learning in the workplace. Additionally, participants opting for a Certificate of Completion will be assigned project work and presentations that will be evaluated by the faculty in addition to providing individual feedback.",
         launchSchedule: {
+<<<<<<< HEAD
             salesStart: '5th January 2026',
             applicationClosure: '18th April 2026',
             selectedCandidatesList: '22nd April 2026',
@@ -357,6 +609,24 @@ export const programmes = [
                 'Certificate of Completion will be awarded to participants who successfully complete the program and satisfy the requisite attendance criteria.',
                 'Certificate of Participation will be awarded to participants who are unable to clear the evaluation criteria but have the requisite attendance.',
                 'No separate Transcript or Marksheet will be provided by DTU to participants.'
+=======
+            applicationClosure: '05th July 2026',
+            academicOrientation: '19th July 2026',
+            classStart: '26th July 2026',
+        },
+        feeStructure: {
+            applicationFee: { label: 'Application Fee', amount: 'INR 2,000 + GST' },
+            programFee: { label: 'Program Fee', amount: 'INR 1,60,000 + GST' }
+        },
+        installments: [
+            { installment: '1st Installment', dueDate: 'Within 7-10 days of offer letter acceptance', amount: 'INR 55,000 + GST' },
+            { installment: '2nd Installment', dueDate: 'On or before 10th September 2026', amount: 'INR 55,000 + GST' },
+            { installment: '3rd Installment', dueDate: 'On or before 10th November 2026', amount: 'INR 50,000 + GST' }
+        ],
+        certification: {
+            description: [
+                'Participants who successfully complete the programme and satisfy the requisite attendance criteria, will be awarded a certficate of completion. Participants who are unable to clear the evaluation criteria but have the requisite attendance will be awarded a Participation certficate. Digital Education Alumni Status & Networking Access will also be granted to eligible participants.'
+>>>>>>> lakshay
             ],
             issuedBy: 'Delhi Technological University (DTU, New Delhi)',
             bonus: 'Executive Alumni Status & Networking Access will also be granted to eligible participants.'
@@ -384,12 +654,20 @@ export const programmes = [
     {
         id: 'renewable-energy',
         enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_aprse/sourceCode/',
+<<<<<<< HEAD
         title: 'Senior Management Program in Renewable Energy Strategy and Sustainable Leadership',
+=======
+        brochure: 'https://drive.google.com/file/d/1guClmh5sz3OJhPldpb1AA7ccIMpr3tP8/view?usp=sharing',
+        enquireLink: 'https://learn.vcnow.in/l/dtu-advanced-programme-renewable-sustainable-energy-management/?utm_source=Google&utm_campaign=DTU-Renewable-Sustainable-Search&utm_adgroup=Energy&utm_content=energy-course_ad01&utm_term=renewable%20energy%20management&utm_source=google&utm_medium=cpc&utm_campaign=DTU-Renewable-Sustainable-Search&hsa_acc=5757883842&hsa_cam=23533594450&hsa_grp=189665752261&hsa_ad=795949771373&hsa_src=g&hsa_tgt=kwd-296293607696&hsa_kw=renewable%20energy%20management&hsa_mt=b&hsa_net=adwords&hsa_ver=3&gad_source=1&gad_campaignid=23533594450&gbraid=0AAAAADO5PapwreXRZVntDtAH1iv1Qb2P2&gclid=Cj0KCQjw1ZjOBhCmARIsADDuFTAYqpiDtDFLc8V3xfo94c_IBiyziyfqxvuYJm9Q1Cx5gq29Ytfwa4saAuc3EALw_wcB',
+        contactText: 'For further details, please contact the Program Manager, <strong>Ms. Shivani Sharma</strong>, at <strong>shivani.sharma@vcnowvcr.com</strong> or call him at <strong>9219078715</strong>.',
+        title: 'Advanced Programme in Renewable & Sustainable Energy Management',
+>>>>>>> lakshay
         shortTitle: 'Renewable Energy',
         subtitle: 'Strategic energy management and sustainable leadership for the future',
         description: 'Learn renewable energy technologies, sustainable energy management, and policy frameworks for a greener future.',
         duration: '6 Months',
         batch: 'Batch 01',
+<<<<<<< HEAD
         startDate: new Date('2026-01-10'),
         mode: 'Online + 3-day Campus',
         cost: 'INR 1,50,000 + GST',
@@ -405,6 +683,34 @@ export const programmes = [
         ],
         faculty: [
             { name: 'Prof. M. Rizwan', designation: 'Department of Electrical Engineering, DTU', image: "/images/faculty/rizwan.jpg" }
+=======
+        mode: 'Online + 3-day Campus',
+        cost: 'INR 1,60,000 + GST',
+        applicationFee: 'INR 2,000 + GST',
+        provider: 'Unified Collaboration Services LLP (VCNow)',
+        serviceProvider: 'Unified Collaboration Services LLP (VCNow)',
+        category: 'certificate',
+        image: '/images/program/2.png',
+        certificate: '/images/certificates/aprse.jpeg',
+        status: 'Live',
+        applicationDeadline: '30th June, 2026',
+        directors: [
+            { name: 'Prof. M. Rizwan', designation: 'Department of Electrical Engineering, DTU', image: '/images/faculty/rizwan.jpg' },
+            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: '/images/faculty/neeraj.png' }
+        ],
+        programfaculty: [
+            'Prof. Bhim Singh, IIT Delhi (IITD); Power Electronics, Power Quality, Renewable Energy Systems',
+            'Prof. Sukumar Mishra, Director IIT Dhanbad (ISM); Power System Engineering, Intelligent Techniques for Control of Power Systems, Power Quality Studies, Renewable Energy',
+            'Prof. Santanu Kumar Mishra, IIT Delhi; EV Charging Infrastructure, Renewable Energy, Power Converter Design',
+            'Prof. M. Rihan, Director General NISE; Solar Energy Systems, Renewable Energy Policy & Deployment',
+            'Dr. Rajesh Katyal, Director General NIWE, Chennai; Wind Energy, Energy Assessment, Renewable Resource Evaluation, Sustainable Development',
+            'Dr. S. K. Tyagi, IIT Delhi (IITD); Heat Transfer, Thermodynamic Studies of Solar & Thermal Energy Systems, Energy Conservation, Energy & Exergy Analysis',
+            'Prof. S. N. Singh, IIT Kanpur / Director IIT Gwalior; Power Systems, Smart Grid, Power System Stability, AI Applications in Power Systems, Power Quality, Wind & Solar Forecasting',
+            'Prof. S. C. Srivastava, IIT Kanpur (IITK); Power System Operation, Smart Grid Technologies',
+            'Prof. Madhusudan Singh, Director IIT Bhagalpur; Power Electronics & Motor Drives, Renewable Energy Integration, Control Systems, Power Quality',
+            'Prof. M. Rizwan, DTU Delhi; Power Engineering, Renewable Energy Systems, Building Energy Management, Smart Grid, AI Applications in Power Engineering',
+            'Dr. Gopal Sarangi, TERI SAS Delhi; Energy Policy, Sustainability, Power & Energy Governance'
+>>>>>>> lakshay
         ],
         highlights: [
             'Certificate from DTU, an Institute of Eminence',
@@ -418,10 +724,15 @@ export const programmes = [
             totalHours: 80,
             liveHours: 67,
             campusHours: 13,
+<<<<<<< HEAD
             tutorialHours: 'NA',
             projectMentorship: 'NA',
             campusImmersion: '3-day Campus Visit at the beginning of the course',
             timing: 'Frequency: Once in a week (Sunday, 9:00 AM - 12:00 PM IST)'
+=======
+            campusImmersion: '3 days during the early stages of the programme',
+            timing: 'Once in a week (Sunday, 09:30 AM - 12:30 PM IST)'
+>>>>>>> lakshay
         },
         eligibility: "For Indian Participants: Graduates (10+2+3) or Diploma Holders (only 10+2+3) from a recognized university (UGC/AICTE/DEC/AIU/State Government) in any discipline. For International Participants: Graduation or equivalent degree from any recognized University or Institution in their respective country.",
         experience: 'Working Professionals with 5 years of work experience',
@@ -503,6 +814,7 @@ export const programmes = [
             }
         ],
         launchSchedule: {
+<<<<<<< HEAD
             admissionOpening: 'TBD',
             applicationClosure: 'TBD',
             selectedCandidates: 'TBD',
@@ -522,6 +834,20 @@ export const programmes = [
             { installment: '1st Installment', amount: 'INR 50,000 + GST (Includes Campus fee + Study Material)' },
             { installment: '2nd Installment', amount: 'INR 50,000 + GST' },
             { installment: '3rd Installment', amount: 'INR 50,000 + GST' }
+=======
+            applicationClosure: '30th June 2026',
+            academicOrientation: '12th July 2026',
+            classStart: '19th July 2026',
+        },
+        feeStructure: {
+            applicationFee: { label: 'Application Fee', amount: 'INR 2,000 + GST' },
+            programFee: { label: 'Program Fee', amount: 'INR 1,60,000 + GST' }
+        },
+        installments: [
+            { installment: '1st Installment', dueDate: 'Within 7-10 days of offer letter acceptance', amount: 'INR 55,000 + GST' },
+            { installment: '2nd Installment', dueDate: 'On or before 10th September 2026', amount: 'INR 55,000 + GST' },
+            { installment: '3rd Installment', dueDate: 'On or before 10th November 2026', amount: 'INR 50,000 + GST' }
+>>>>>>> lakshay
         ],
         selectionCriteria: [
             'Marks in Class X',

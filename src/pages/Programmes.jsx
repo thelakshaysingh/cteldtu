@@ -10,6 +10,10 @@ const Programmes = () => {
     };
 
     const formatDate = (date) => {
+<<<<<<< HEAD
+=======
+        if (!date || !(date instanceof Date)) return 'TBD';
+>>>>>>> lakshay
         return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
     };
 
@@ -85,7 +89,11 @@ const Programmes = () => {
                                                 Enroll Now
                                             </a>
                                         </div>
+<<<<<<< HEAD
                                         </div>
+=======
+                                    </div>
+>>>>>>> lakshay
 
                                     <div className="programme-right-section">
                                         <h4>{programme.title}</h4>
@@ -94,10 +102,14 @@ const Programmes = () => {
                                                 <strong>Service Provider:</strong> {programme.serviceProvider}
                                             </p>
                                         )}
+<<<<<<< HEAD
                                         <span className="status-badge">Status: Coming Soon</span>
                                         <p className="detail">
                                             <strong>Start Date:</strong> {formatDate(programme.startDate)}
                                         </p>
+=======
+                                        <span className="status-badge">Status: {programme.status}</span>
+>>>>>>> lakshay
                                         {programme.cost && (
                                             <p className="detail">
                                                 <strong>Programme Fee:</strong> {programme.cost}

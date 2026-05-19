@@ -69,7 +69,15 @@ const Footer = () => {
                             <ul className="footer-link-list">
                                 {quickLinks.map((link, index) => (
                                     <li key={index}>
+<<<<<<< HEAD
                                         <Link to={link.path}>{link.label}</Link>
+=======
+                                        {link.path ? (
+                                            <Link to={link.path}>{link.label}</Link>
+                                        ) : (
+                                            <span>{link.label}</span>
+                                        )}
+>>>>>>> lakshay
                                     </li>
                                 ))}
                             </ul>
@@ -93,7 +101,17 @@ const Footer = () => {
                             <ul className="footer-link-list">
                                 {companyLinks.map((link, index) => (
                                     <li key={index}>
+<<<<<<< HEAD
                                         <Link to={link.path}>{link.label}</Link>
+=======
+                                        {link.external ? (
+                                            <a href={link.path} target="_blank" rel="noopener noreferrer">
+                                                {link.label}
+                                            </a>
+                                        ) : (
+                                            <Link to={link.path}>{link.label}</Link>
+                                        )}
+>>>>>>> lakshay
                                     </li>
                                 ))}
                             </ul>
@@ -110,7 +128,11 @@ const Footer = () => {
                                     </svg>
                                     <a href="mailto:ctel@dtu.ac.in">ctel@dtu.ac.in</a>
                                 </p>
+<<<<<<< HEAD
                                 
+=======
+
+>>>>>>> lakshay
                             </div>
 
                             {/* Social Icons */}

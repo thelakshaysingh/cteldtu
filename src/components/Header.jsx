@@ -17,11 +17,19 @@ const Header = () => {
                 { label: 'Message from Dean (DE)', path: '/message-dean' },
             ],
         },
+<<<<<<< HEAD
          {
             label: 'Programs',
             dropdown: [
                 { label: 'Certificate', path: '/programmes#certificate' },
                 { label: 'Degree', path: '#', disabled: true  },
+=======
+        {
+            label: 'Programs',
+            dropdown: [
+                { label: 'Certificate', path: '/programmes#certificate' },
+                { label: 'Degree', path: '#', disabled: true },
+>>>>>>> lakshay
                 { label: 'Diploma', path: '#', disabled: true },
                 { label: 'DTU Edge', path: 'https://dtuedge.com/', external: true },
             ],
@@ -77,7 +85,11 @@ const Header = () => {
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                         </svg>
                                     </span>
+<<<<<<< HEAD
                                      <AnimatePresence>
+=======
+                                    <AnimatePresence>
+>>>>>>> lakshay
                                         {activeDropdown === index && (
                                             <motion.div
                                                 className="dropdown-menu"

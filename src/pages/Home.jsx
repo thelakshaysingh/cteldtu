@@ -2,6 +2,10 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { programmes, calendarEvents } from '../data/programmes';
+<<<<<<< HEAD
+=======
+import AnnouncementBanner from '../components/AnnouncementBanner';
+>>>>>>> lakshay
 import './Home.css';
 
 const Home = () => {
@@ -41,6 +45,10 @@ const Home = () => {
     const [currentDate, setCurrentDate] = useState(new Date());
 
     const formatDate = (date) => {
+<<<<<<< HEAD
+=======
+        if (!date || !(date instanceof Date)) return 'TBD';
+>>>>>>> lakshay
         return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
     };
 

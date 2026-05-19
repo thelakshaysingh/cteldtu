@@ -21,6 +21,10 @@ const ProgrammeDetail = () => {
     }
 
     const formatDate = (date) => {
+<<<<<<< HEAD
+=======
+        if (!date || !(date instanceof Date)) return 'TBD';
+>>>>>>> lakshay
         return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
     };
 
@@ -128,6 +132,26 @@ const ProgrammeDetail = () => {
                             </motion.section>
                         )}
 
+<<<<<<< HEAD
+=======
+                        {/* Program Faculty */}
+                        {programme.programfaculty && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.25 }}
+                            >
+                                <h2>Program Faculty</h2>
+                                <ul className="objectives-list">
+                                    {programme.programfaculty.map((obj, index) => (
+                                        <li key={index}>{obj}</li>
+                                    ))}
+                                </ul>
+                            </motion.section>
+                        )}
+
+>>>>>>> lakshay
                         {/* Objectives */}
                         {programme.objectives && (
                             <motion.section
@@ -243,7 +267,13 @@ const ProgrammeDetail = () => {
                                     <li>• Total Learning Hours: {programme.schedule.totalHours} hours</li>
                                     {programme.schedule.campusHours && <li>• Campus classes: {programme.schedule.campusHours} hours</li>}
                                     {programme.schedule.liveHours && <li>• Online classes: {programme.schedule.liveHours} hours</li>}
+<<<<<<< HEAD
                                     {programme.schedule.tutorialHours && <li>• Tutorial Hours: {programme.schedule.tutorialHours}</li>}
+=======
+                                    {programme.schedule.selfHours && <li>• Self-paced Learning: {programme.schedule.selfHours} hours</li>}
+                                    {programme.schedule.handsOnTutorials && <li>• Hands-on Tutorials: {programme.schedule.handsOnTutorials}</li>}
+                                    {programme.schedule.tutorialHours && <li>• Tutorial Hours: {programme.schedule.tutorialHours} hours</li>}
+>>>>>>> lakshay
                                     {programme.schedule.projectMentorship && <li>• Project Mentorship: {programme.schedule.projectMentorship}</li>}
                                     {programme.schedule.assignmentHours && <li>• {programme.schedule.assignmentHours} hours Assignments</li>}
                                     {programme.schedule.capstoneHours && <li>• {programme.schedule.capstoneHours} hours Capstone Project</li>}
@@ -333,6 +363,7 @@ const ProgrammeDetail = () => {
                                         <li key={index}>{assignment}</li>
                                     ))}
                                 </ul>
+<<<<<<< HEAD
                             </motion.section>
                         )}
 {/* Certification */}
@@ -373,6 +404,54 @@ const ProgrammeDetail = () => {
         )}
     </motion.section>
 )}
+=======
+                                {programme.capstoneProject && (
+                                    <div className="capstone-project" style={{ marginTop: '1.5rem' }}>
+                                        <h3>Capstone Project</h3>
+                                        <p>{programme.capstoneProject}</p>
+                                    </div>
+                                )}
+                            </motion.section>
+                        )}
+                        {/* Certification */}
+                        {programme.certification && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.55 }}
+                            >
+                                <h2>Certification</h2>
+
+                                <ul className="certification-list">
+                                    {programme.certification.description.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                    ))}
+                                </ul>
+
+                                <p className="cert-issuer">
+                                    <strong>Certificate Issued By:</strong> {programme.certification.issuedBy}
+                                </p>
+
+                                {programme.certification.bonus && (
+                                    <p className="cert-bonus">
+                                        <strong>Bonus:</strong> {programme.certification.bonus}
+                                    </p>
+                                )}
+
+                                {/* Certificate Image */}
+                                {programme.certificate && (
+                                    <div className="certificate-sample">
+                                        <img
+                                            src={programme.certificate}
+                                            alt={`${programme.title} Certificate`}
+                                            className="certificate-image"
+                                        />
+                                    </div>
+                                )}
+                            </motion.section>
+                        )}
+>>>>>>> lakshay
 
                         {/* Eligibility */}
                         <motion.section
@@ -563,6 +642,25 @@ const ProgrammeDetail = () => {
                                 </div>
                             </motion.section>
                         )}
+<<<<<<< HEAD
+=======
+
+                        {/* Contact Us */}
+                        {programme.contactText && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 1.1 }}
+                            >
+                                <h2>Contact Us</h2>
+                                <p
+                                    style={{ fontSize: '1.1rem', lineHeight: '1.6' }}
+                                    dangerouslySetInnerHTML={{ __html: programme.contactText }}
+                                />
+                            </motion.section>
+                        )}
+>>>>>>> lakshay
                     </div>
 
                     {/* Sidebar */}
@@ -582,8 +680,13 @@ const ProgrammeDetail = () => {
                                     <span>{programme.duration}</span>
                                 </div>
                                 <div className="info-row">
+<<<<<<< HEAD
                                     <span>Start Date:</span>
                                     <span>{formatDate(programme.startDate)}</span>
+=======
+                                    <span>Application Deadline:</span>
+                                    <span>{programme.applicationDeadline || 'TBD'}</span>
+>>>>>>> lakshay
                                 </div>
                                 <div className="info-row">
                                     <span>Programme Type:</span>
@@ -603,20 +706,111 @@ const ProgrammeDetail = () => {
                                 </div>
                             </div>
 
+<<<<<<< HEAD
+=======
+                            {programme.enquireLink && (
+                                <a
+                                    href={programme.enquireLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn btn-primary full-width"
+                                    style={{ marginTop: '1rem' }}
+                                >
+                                    Enquire Now
+                                </a>
+                            )}
+
+                            {programme.brochure && (
+                                <a
+                                    href={programme.brochure}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn btn-outline-dark full-width"
+                                    style={{ marginTop: '1rem' }}
+                                >
+                                    Download Brochure (PDF)
+                                </a>
+                            )}
+
+
+
+                            {programme.externalLink && (
+                                <a
+                                    href={programme.externalLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="btn btn-primary full-width"
+                                    style={{ marginTop: '1rem' }}
+                                >
+                                    {programme.externalLinkText || 'External Link'}
+                                </a>
+                            )}
+
+                            {programme.enroll && (
+>>>>>>> lakshay
                                 <a
                                     href={programme.enroll}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="btn btn-primary full-width"
+<<<<<<< HEAD
                                     title="Enrollment not available yet"
                                     >
                                     Enroll Now
                                     </a>
+=======
+                                    title="Enroll Now"
+                                >
+                                    Enroll Now
+                                </a>
+                            )}
+>>>>>>> lakshay
 
                         </div>
                     </motion.aside>
                 </div>
             </div>
+<<<<<<< HEAD
+=======
+
+            {/* Mobile Sticky Footer */}
+            <div className="mobile-sticky-footer">
+                <div className="container">
+                    <div className="sticky-actions">
+                        {programme.brochure && (
+                            <a
+                                href={programme.brochure}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-outline-dark sticky-btn brochure-btn"
+                            >
+                                Brochure
+                            </a>
+                        )}
+                        {programme.enquireLink && (
+                            <a
+                                href={programme.enquireLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-primary sticky-btn"
+                            >
+                                Enquire
+                            </a>
+                        )}
+                        {programme.enroll && (
+                            <a
+                                href={programme.enroll}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="btn btn-primary sticky-btn"
+                            >
+                                Enroll
+                            </a>
+                        )}
+                    </div>
+                </div>
+            </div>
+>>>>>>> lakshay
         </div>
     );
 };
