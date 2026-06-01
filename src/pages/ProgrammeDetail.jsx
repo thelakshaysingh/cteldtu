@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { programmes } from '../data/programmes';
@@ -8,6 +8,64 @@ const ProgrammeDetail = () => {
     const { id } = useParams();
     const programme = programmes.find(p => p.id === id);
     const [expandedModule, setExpandedModule] = useState(0);
+
+    useEffect(() => {
+        if (!programme) return;
+
+        // Save original title and description
+        const originalTitle = document.title;
+        let metaDesc = document.querySelector('meta[name="description"]');
+        const originalDesc = metaDesc ? metaDesc.getAttribute('content') : '';
+
+        // Update Title
+        if (programme.id === 'advanced-certificate-program-in-artificial-intelligence') {
+            document.title = "DTU Advanced Certificate Program in Artificial Intelligence";
+        } else {
+            document.title = `${programme.title} | CTEL DTU`;
+        }
+
+        // Update Description
+        if (!metaDesc) {
+            metaDesc = document.createElement('meta');
+            metaDesc.setAttribute('name', 'description');
+            document.head.appendChild(metaDesc);
+        }
+        if (programme.id === 'advanced-certificate-program-in-artificial-intelligence') {
+            metaDesc.setAttribute('content', 'Enrol in our DTU Advanced Certificate Program in Artificial Intelligence to gain a foundational understanding of AI, AI tools, algorithms, and their industrial applications. Enquire now!');
+        } else {
+            metaDesc.setAttribute('content', programme.description || '');
+        }
+
+        // Update Canonical URL
+        let canonical = document.querySelector('link[rel="canonical"]');
+        const originalCanonical = canonical ? canonical.getAttribute('href') : '';
+        if (!canonical) {
+            canonical = document.createElement('link');
+            canonical.setAttribute('rel', 'canonical');
+            document.head.appendChild(canonical);
+        }
+        const currentUrl = `https://ctel.dtu.ac.in/programme/${programme.id}`;
+        canonical.setAttribute('href', currentUrl);
+
+        // Cleanup function
+        return () => {
+            document.title = originalTitle;
+            if (metaDesc) {
+                if (originalDesc) {
+                    metaDesc.setAttribute('content', originalDesc);
+                } else {
+                    metaDesc.remove();
+                }
+            }
+            if (canonical) {
+                if (originalCanonical) {
+                    canonical.setAttribute('href', originalCanonical);
+                } else {
+                    canonical.remove();
+                }
+            }
+        };
+    }, [programme]);
 
     if (!programme) {
         return (

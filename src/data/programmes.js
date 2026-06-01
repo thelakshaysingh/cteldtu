@@ -18,10 +18,10 @@ export const programmes = [
         image: '/images/program/1.png',
         certificate: '/images/certificates/ai.jpeg',
         status: 'Live',
-        applicationDeadline: '30th May, 2026',
+        applicationDeadline: '06th June, 2026',
         directors: [
             { name: 'Prof. S Indu', designation: 'Dean – Digital Education, Delhi Technological University', image: "/images/faculty/indu.jpg" },
-            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.png" }
+            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.jpg" }
 
         ],
         faculty: [
@@ -43,7 +43,7 @@ export const programmes = [
             selfHours: 30,
             handsOnTutorials: 'Included in the hours above',
             campusImmersion: '1-day Campus Immersion (optional)',
-            timing: 'Saturday, 6:30 PM - 9:40 PM IST (Session 1: 6:30 PM - 8:00 PM, Break: 8:00 PM - 8:10 PM, Session 2: 8:10 PM - 9:40 PM)'
+            timing: 'Sunday, 09:00AM - 12:00PM IST (Session 1: 09:00AM - 10:30AM, Session 2: 10:40AM - 12:10PM)'
         },
         eligibility: "Graduates & Postgraduates from Engineering, Technology, CS, IT, Mathematics. Professionals with 1+ years of work experience in tech or related domains",
         targetAudience: [
@@ -234,7 +234,7 @@ export const programmes = [
         applicationDeadline: '05th July, 2026',
         directors: [
             { name: 'Prof. Amit Mookerjee', designation: 'USME, Delhi Technological University', image: "/images/faculty/amit.jpg" },
-            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.png" }
+            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.jpg" }
         ],
         programfaculty: [
             'Dr. Amandeep Kaur, Faculty member USME , DTU',
@@ -399,7 +399,7 @@ export const programmes = [
         applicationDeadline: '30th June, 2026',
         directors: [
             { name: 'Prof. M. Rizwan', designation: 'Department of Electrical Engineering, DTU', image: '/images/faculty/rizwan.jpg' },
-            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: '/images/faculty/neeraj.png' }
+            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: '/images/faculty/neeraj.jpg' }
         ],
         programfaculty: [
             'Prof. Bhim Singh, IIT Delhi (IITD); Power Electronics, Power Quality, Renewable Energy Systems',
