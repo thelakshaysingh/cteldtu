@@ -11,7 +11,7 @@ const Footer = () => {
     ];
 
     const exploreLinks = [
-        { label: 'AI Programme', path: '/programme/advanced-certificate-program-in-artificial-intelligence' },
+        { label: 'AI Programme', path: '/programme/ai' },
         { label: 'CSR & ESG', path: '/programme/csr-esg' },
         { label: 'Renewable Energy', path: '/programme/renewable-energy' },
     ];

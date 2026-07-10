@@ -18,10 +18,10 @@ export const programmes = [
         image: '/images/program/1.png',
         certificate: '/images/certificates/ai.jpeg',
         status: 'Live',
-        applicationDeadline: '06th June, 2026',
+        applicationDeadline: '30th May, 2026',
         directors: [
             { name: 'Prof. S Indu', designation: 'Dean – Digital Education, Delhi Technological University', image: "/images/faculty/indu.jpg" },
-            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.jpg" }
+            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.png" }
 
         ],
         faculty: [
@@ -39,17 +39,17 @@ export const programmes = [
         ],
         schedule: {
             totalHours: 110,
-            liveHours: 80,
-            selfHours: 30,
-            handsOnTutorials: 'Included in the hours above',
-            campusImmersion: '1-day Campus Immersion (optional)',
-            timing: 'Sunday, 09:00AM - 12:00PM IST (Session 1: 09:00AM - 10:30AM, Session 2: 10:40AM - 12:10PM)'
+            campusHours: 20,
+            liveHours: 60,
+            tutorialHours: 30,
+            projectMentorship: 'NA',
+            campusImmersion: '3-day Campus Immersion at the end of the programme (optional)',
+            timing: 'Saturday, 6:30 PM - 9:40 PM IST (Session 1: 6:30 PM - 8:00 PM, Break: 8:00 PM - 8:10 PM, Session 2: 8:10 PM - 9:40 PM)'
         },
-        eligibility: "Graduates & Postgraduates from Engineering, Technology, CS, IT, Mathematics. Professionals with 1+ years of work experience in tech or related domains",
+        eligibility: "Graduates or Post-Graduates in Engineering, Technology, Computer Science, IT, Mathematical Sciences and related disciplines will be preferred. Preference to working professionals with minimum 1 year of prior experience in IT, software, technology, engineering or related domains.",
         targetAudience: [
-            'Engineering, Tech, CS, IT, and Math graduates / postgraduates',
-            'Working professionals with 1+ years of experience in IT, software, analytics,engineering, or related domains',
-            'Anyone looking to break into or upscale within AI/ML, Deep Learning & Data Science',
+            'Graduates or Post-Graduates in Engineering, Technology, Computer Science, IT, Mathematical Sciences and related disciplines',
+            'Working professionals with minimum 1 year of prior experience in IT, software, technology, engineering or related domains'
         ],
         objectives: [
             'The Advanced Certificate Program in Artificial Intelligence is a comprehensive course that provides participants with a foundational understanding of artificial intelligence, AI tools, algorithms, and their industrial applications.',
@@ -234,7 +234,7 @@ export const programmes = [
         applicationDeadline: '05th July, 2026',
         directors: [
             { name: 'Prof. Amit Mookerjee', designation: 'USME, Delhi Technological University', image: "/images/faculty/amit.jpg" },
-            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.jpg" }
+            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.png" }
         ],
         programfaculty: [
             'Dr. Amandeep Kaur, Faculty member USME , DTU',
@@ -399,7 +399,7 @@ export const programmes = [
         applicationDeadline: '30th June, 2026',
         directors: [
             { name: 'Prof. M. Rizwan', designation: 'Department of Electrical Engineering, DTU', image: '/images/faculty/rizwan.jpg' },
-            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: '/images/faculty/neeraj.jpg' }
+            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: '/images/faculty/neeraj.png' }
         ],
         programfaculty: [
             'Prof. Bhim Singh, IIT Delhi (IITD); Power Electronics, Power Quality, Renewable Energy Systems',
