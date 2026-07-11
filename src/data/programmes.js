@@ -231,7 +231,7 @@ export const programmes = [
         image: '/images/program/3.png',
         certificate: '/images/certificates/csr.jpeg',
         status: 'Live',
-        applicationDeadline: '05th July, 2026',
+        applicationDeadline: '22nd July, 2026',
         directors: [
             { name: 'Prof. Amit Mookerjee', designation: 'USME, Delhi Technological University', image: "/images/faculty/amit.jpg" },
             { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.png" }
@@ -335,7 +335,6 @@ export const programmes = [
         ],
         pedagogy: "The classes for this Program will be delivered through LIVE lectures using Direct to Device (D2D) Technology facilitated by VCNow. The pedagogy comprises of case studies, interactive sessions, quizzes, mid-term and end-term examinations, class participation, project work and group-based presentations, in-class exercises imparted by DTU's faculty to help participants gain knowledge, understanding and hands-on skills to immediately apply their learning in the workplace. Additionally, participants opting for a Certificate of Completion will be assigned project work and presentations that will be evaluated by the faculty in addition to providing individual feedback.",
         launchSchedule: {
-            applicationClosure: '05th July 2026',
             academicOrientation: '19th July 2026',
             classStart: '26th July 2026',
         },
@@ -396,7 +395,7 @@ export const programmes = [
         image: '/images/program/2.png',
         certificate: '/images/certificates/aprse.jpeg',
         status: 'Live',
-        applicationDeadline: '30th June, 2026',
+        applicationDeadline: '15th July, 2026',
         directors: [
             { name: 'Prof. M. Rizwan', designation: 'Department of Electrical Engineering, DTU', image: '/images/faculty/rizwan.jpg' },
             { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: '/images/faculty/neeraj.png' }
@@ -509,7 +508,6 @@ export const programmes = [
             }
         ],
         launchSchedule: {
-            applicationClosure: '30th June 2026',
             academicOrientation: '12th July 2026',
             classStart: '19th July 2026',
         },
