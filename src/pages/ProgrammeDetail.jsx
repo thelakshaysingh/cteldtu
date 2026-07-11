@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { programmes } from '../data/programmes';
@@ -8,6 +8,32 @@ const ProgrammeDetail = () => {
     const { id } = useParams();
     const programme = programmes.find(p => p.id === id);
     const [expandedModule, setExpandedModule] = useState(0);
+
+    useEffect(() => {
+        if (programme) {
+            if (programme.id === 'advanced-certificate-program-in-artificial-intelligence') {
+                document.title = 'DTU Advanced Certificate Program in Artificial Intelligence';
+                let metaDescription = document.querySelector('meta[name="description"]');
+                if (!metaDescription) {
+                    metaDescription = document.createElement('meta');
+                    metaDescription.name = 'description';
+                    document.head.appendChild(metaDescription);
+                }
+                metaDescription.content = 'Enrol in our DTU Advanced Certificate Program in Artificial Intelligence to gain a foundational understanding of AI, Al tools, algorithms, and their industrial applications. Enquire now!';
+            } else {
+                document.title = `${programme.title} - CTEL DTU`;
+                let metaDescription = document.querySelector('meta[name="description"]');
+                if (metaDescription) {
+                    metaDescription.content = programme.subtitle || 'Certificate Program at CTEL DTU';
+                }
+            }
+        }
+        
+        // Cleanup function to restore default title when leaving the page
+        return () => {
+            document.title = 'CTEL DTU';
+        };
+    }, [programme]);
 
     if (!programme) {
         return (
