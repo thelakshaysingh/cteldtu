@@ -115,6 +115,50 @@
     margin: 0;
 }
 
+.section-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.slider-nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.slider-arrow-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--white);
+    border: 1px solid var(--gray-300);
+    color: var(--primary);
+    font-size: 1.5rem;
+    line-height: 1;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: var(--shadow-sm);
+    padding: 0;
+}
+
+.slider-arrow-btn:hover {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.slider-arrow-btn:active {
+    transform: translateY(0);
+}
+
 /* Programmes Grid */
 .programmes-grid {
     display: grid;
@@ -155,7 +199,8 @@
 
 .programme-image {
     position: relative;
-    height: 180px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
 }
 
@@ -215,6 +260,51 @@
 .programme-provider {
     font-size: 0.8rem;
     color: var(--gray-500);
+}
+
+.admission-tag-wrapper {
+    margin-top: 0.75rem;
+}
+
+.admission-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    transition: all 0.25s ease;
+}
+
+.admission-tag.open {
+    background-color: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+}
+
+.admission-tag.open .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #10b981;
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+}
+
+.admission-tag.closed {
+    background-color: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+.admission-tag.closed .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ef4444;
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.25);
 }
 
 /* Visual Calendar Widget */

@@ -555,12 +555,43 @@
 }
 
 .status-badge {
-    background-color: #D1FAE5;
-    color: #065F46;
-    padding: 0.25rem 0.5rem;
-    border-radius: var(--radius-sm);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 0.25rem 0.65rem;
+    border-radius: 20px;
     font-size: 0.75rem;
     font-weight: 600;
+    line-height: 1.2;
+    transition: all 0.25s ease;
+}
+
+.status-badge.open {
+    background-color: #ecfdf5;
+    color: #047857;
+    border: 1px solid #a7f3d0;
+}
+
+.status-badge.open .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #10b981;
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.25);
+}
+
+.status-badge.closed {
+    background-color: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+}
+
+.status-badge.closed .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #ef4444;
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.25);
 }
 
 .fee-bold {

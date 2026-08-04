@@ -3,6 +3,16 @@ import { motion } from 'framer-motion';
 import { programmes } from '../data/programmes';
 import './Programmes.css';
 
+const getAdmissionStatusInfo = (statusStr) => {
+    if (!statusStr) return { text: 'Admissions Open', isClosed: false };
+    const lower = String(statusStr).toLowerCase();
+    const isClosed = lower.includes('close');
+    let text = statusStr;
+    if (statusStr === 'open' || statusStr === 'Open') text = 'Admissions Open';
+    if (statusStr === 'closed' || statusStr === 'Closed') text = 'Admissions Closed';
+    return { text, isClosed };
+};
+
 const Programmes = () => {
     const fadeInUp = {
         hidden: { opacity: 0, y: 30 },
@@ -95,7 +105,17 @@ const Programmes = () => {
                                                 <strong>Service Provider:</strong> {programme.serviceProvider}
                                             </p>
                                         )}
-                                        <span className="status-badge">Status: {programme.status}</span>
+                                        {(() => {
+                                            const info = getAdmissionStatusInfo(programme.admissionStatus || programme.status);
+                                            return (
+                                                <div className="programme-status-wrapper">
+                                                    <span className={`status-badge ${info.isClosed ? 'closed' : 'open'}`}>
+                                                        <span className="status-dot"></span>
+                                                        {info.text}
+                                                    </span>
+                                                </div>
+                                            );
+                                        })()}
                                         {programme.cost && (
                                             <p className="detail">
                                                 <strong>Programme Fee:</strong> {programme.cost}

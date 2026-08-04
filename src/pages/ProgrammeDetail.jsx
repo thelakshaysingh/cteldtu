@@ -4,6 +4,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { programmes } from '../data/programmes';
 import './ProgrammeDetail.css';
 
+const getAdmissionStatusInfo = (statusStr) => {
+    if (!statusStr) return { text: 'Admissions Open', isClosed: false };
+    const lower = String(statusStr).toLowerCase();
+    const isClosed = lower.includes('close');
+    let text = statusStr;
+    if (statusStr === 'open' || statusStr === 'Open') text = 'Admissions Open';
+    if (statusStr === 'closed' || statusStr === 'Closed') text = 'Admissions Closed';
+    return { text, isClosed };
+};
+
 const ProgrammeDetail = () => {
     const { id } = useParams();
     const programme = programmes.find(p => p.id === id);
@@ -28,7 +38,7 @@ const ProgrammeDetail = () => {
                 }
             }
         }
-        
+
         // Cleanup function to restore default title when leaving the page
         return () => {
             document.title = 'CTEL DTU';
@@ -169,6 +179,76 @@ const ProgrammeDetail = () => {
                                         <li key={index}>{obj}</li>
                                     ))}
                                 </ul>
+                            </motion.section>
+                        )}
+
+                        {/* Distinguished Mentors */}
+                        {programme.mentors && programme.mentors.length > 0 && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.25 }}
+                            >
+                                <h2>Distinguished Mentor(s)</h2>
+                                {typeof programme.mentors[0] === 'string' ? (
+                                    <ul className="objectives-list">
+                                        {programme.mentors.map((obj, index) => (
+                                            <li key={index}>{obj}</li>
+                                        ))}
+                                    </ul>
+                                ) : (
+                                    <div className="directors-list">
+                                        {programme.mentors.map((mentor, index) => (
+                                            <div key={index} className="director-card">
+                                                <div className="director-avatar">
+                                                    {mentor.image && <img src={mentor.image} alt={mentor.name} loading="lazy" />}
+                                                </div>
+                                                <div className="director-info">
+                                                    <h3>{mentor.name}</h3>
+                                                    <p>{mentor.designation}</p>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
+                            </motion.section>
+                        )}
+
+                        {/* Need for such a Program */}
+                        {programme.needForProgram && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.24 }}
+                            >
+                                <h2>Need for such a Program</h2>
+                                <ul className="objectives-list">
+                                    {programme.needForProgram.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                    ))}
+                                </ul>
+                            </motion.section>
+                        )}
+
+                        {/* Problems & Solutions Matrix */}
+                        {programme.problemSolutions && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.24 }}
+                            >
+                                <h2>Problems & Corresponding Solutions</h2>
+                                <div className="problems-solutions-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '1rem', marginTop: '1rem' }}>
+                                    {programme.problemSolutions.map((item, index) => (
+                                        <div key={index} style={{ background: '#f8fafc', padding: '1rem', borderRadius: '8px', borderLeft: '4px solid var(--primary)' }}>
+                                            <strong style={{ color: '#e11d48' }}>{item.problem}</strong>
+                                            <div style={{ color: '#0284c7', fontWeight: 600, marginTop: '0.25rem' }}>→ {item.solution}</div>
+                                        </div>
+                                    ))}
+                                </div>
                             </motion.section>
                         )}
 
@@ -426,6 +506,23 @@ const ProgrammeDetail = () => {
                             </motion.section>
                         )}
 
+                        {/* Alumni Benefits */}
+                        {programme.alumniBenefits && (
+                            <motion.section
+                                className="content-card"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.58 }}
+                            >
+                                <h2>Benefits of DTU Alumni (Digital Education)</h2>
+                                <ul className="objectives-list">
+                                    {programme.alumniBenefits.map((benefit, index) => (
+                                        <li key={index}>{benefit}</li>
+                                    ))}
+                                </ul>
+                            </motion.section>
+                        )}
+
                         {/* Eligibility */}
                         <motion.section
                             className="content-card"
@@ -659,7 +756,15 @@ const ProgrammeDetail = () => {
                                 </div>
                                 <div className="info-row">
                                     <span>Status:</span>
-                                    <span className="status-badge">{programme.status || 'Coming Soon'}</span>
+                                    {(() => {
+                                        const info = getAdmissionStatusInfo(programme.admissionStatus || programme.status);
+                                        return (
+                                            <span className={`status-badge ${info.isClosed ? 'closed' : 'open'}`}>
+                                                <span className="status-dot"></span>
+                                                {info.text}
+                                            </span>
+                                        );
+                                    })()}
                                 </div>
                                 <div className="info-row">
                                     <span>Total Fee:</span>

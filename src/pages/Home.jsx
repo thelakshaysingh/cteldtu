@@ -1,11 +1,35 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { programmes, calendarEvents } from '../data/programmes';
 import AnnouncementBanner from '../components/AnnouncementBanner';
 import './Home.css';
 
+const getAdmissionStatusInfo = (statusStr) => {
+    if (!statusStr) return null;
+    const lower = String(statusStr).toLowerCase();
+    const isClosed = lower.includes('close');
+    let text = statusStr;
+    if (statusStr === 'open' || statusStr === 'Open') text = 'Admissions Open';
+    if (statusStr === 'closed' || statusStr === 'Closed') text = 'Admissions Closed';
+    return { text, isClosed };
+};
+
 const Home = () => {
+    // Programmes Slider State
+    const [sliderIndex, setSliderIndex] = useState(0);
+    const itemsPerPage = 3;
+    const maxIndex = Math.max(0, programmes.length - itemsPerPage);
+
+    const handlePrev = () => {
+        setSliderIndex((prev) => (prev > 0 ? prev - 1 : maxIndex));
+    };
+
+    const handleNext = () => {
+        setSliderIndex((prev) => (prev < maxIndex ? prev + 1 : 0));
+    };
+
+    const visibleProgrammes = programmes.slice(sliderIndex, sliderIndex + itemsPerPage);
     // Animation variants
     const fadeInUp = {
         hidden: { opacity: 0, y: 30 },
@@ -207,39 +231,75 @@ const Home = () => {
                         <div>
                             <h2>Certificate Programmes</h2>
                         </div>
-                        <Link to="/programmes" className="btn btn-primary">
-                            View All Programmes
-                        </Link>
+                        <div className="section-header-actions">
+                            <div className="slider-nav-buttons">
+                                <button
+                                    onClick={handlePrev}
+                                    className="slider-arrow-btn"
+                                    aria-label="Previous programmes"
+                                    title="Previous"
+                                >
+                                    ‹
+                                </button>
+                                <button
+                                    onClick={handleNext}
+                                    className="slider-arrow-btn"
+                                    aria-label="Next programmes"
+                                    title="Next"
+                                >
+                                    ›
+                                </button>
+                            </div>
+                            <Link to="/programmes" className="btn btn-primary">
+                                View All Programmes
+                            </Link>
+                        </div>
                     </motion.div>
 
-                    <motion.div
-                        className="programmes-grid"
-                        variants={staggerContainer}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true, margin: "-50px" }}
-                    >
-                        {programmes.map((programme) => (
-                            <motion.article
-                                key={programme.id}
-                                className="programme-card"
-                                variants={fadeInUp}
-                                transition={{ duration: 0.5 }}
-                                whileHover={{ y: -8, boxShadow: '0 20px 40px rgba(0,0,0,0.15)' }}
-                            >
-                                <Link to={`/programme/${programme.id}`}>
-                                    <div className="programme-image">
-                                        <img src={programme.image} alt={programme.title} loading="lazy" />
-                                    </div>
-                                    <div className="programme-body">
-                                        <h3>{programme.title}</h3>
-                                        <p className="programme-duration">{programme.duration}</p>
-                                        <p className="programme-description">{programme.description}</p>
-                                    </div>
-                                </Link>
-                            </motion.article>
-                        ))}
-                    </motion.div>
+                    <AnimatePresence mode="wait">
+                        <motion.div
+                            key={sliderIndex}
+                            className="programmes-grid"
+                            variants={staggerContainer}
+                            initial="hidden"
+                            animate="visible"
+                            exit="hidden"
+                            viewport={{ once: true, margin: "-50px" }}
+                        >
+                            {visibleProgrammes.map((programme) => (
+                                <motion.article
+                                    key={programme.id}
+                                    className="programme-card"
+                                    variants={fadeInUp}
+                                    transition={{ duration: 0.4 }}
+                                    whileHover={{ y: -8, boxShadow: '0 20px 40px rgba(0,0,0,0.15)' }}
+                                >
+                                    <Link to={`/programme/${programme.id}`}>
+                                        <div className="programme-image">
+                                            <img src={programme.image} alt={programme.title} loading="lazy" />
+                                        </div>
+                                        <div className="programme-body">
+                                            <h3>{programme.title}</h3>
+                                            <p className="programme-duration">{programme.duration}</p>
+                                            <p className="programme-description">{programme.description}</p>
+                                            {programme.admissionStatus && (() => {
+                                                const info = getAdmissionStatusInfo(programme.admissionStatus);
+                                                if (!info) return null;
+                                                return (
+                                                    <div className="admission-tag-wrapper">
+                                                        <span className={`admission-tag ${info.isClosed ? 'closed' : 'open'}`}>
+                                                            <span className="status-dot"></span>
+                                                            {info.text}
+                                                        </span>
+                                                    </div>
+                                                );
+                                            })()}
+                                        </div>
+                                    </Link>
+                                </motion.article>
+                            ))}
+                        </motion.div>
+                    </AnimatePresence>
                 </div>
             </section>
 

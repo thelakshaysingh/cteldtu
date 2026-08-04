@@ -1,5 +1,202 @@
 export const programmes = [
     {
+        id: 'life-leadership-and-inner-excellence',
+        enroll: '',
+        brochure: 'https://drive.google.com/file/d/1gDiCF7qEAlf1vszRYRcBrp0RGLYu84hc/view?usp=sharing',
+        enquireLink: '',
+        contactText: '<strong>Email:</strong> neeraj.sharma@dtu.ac.in<br /><strong>Phone:</strong> 9811122237',
+        title: 'Professional Certificate in Life Leadership and Inner Excellence',
+        shortTitle: 'Life Leadership & Inner Excellence',
+        subtitle: 'An interdisciplinary approach integrating ancient Indian wisdom with modern life management',
+        description: 'A comprehensive 6-month programme integrating timeless Vedic wisdom, Bhagavad Gita principles, and modern psychology for holistic well-being and life leadership.',
+        duration: '6 Months',
+        admissionStatus: 'Admissions Open',
+        batch: 'Batch 01',
+        mode: 'Online',
+        cost: 'INR 18,500 + GST',
+        applicationFee: 'INR 1,000 + GST',
+        provider: 'Centre for Technology Enhanced Learning (CTEL), DTU',
+        serviceProvider: 'Delhi Technological University (DTU)',
+        category: 'certificate',
+        image: '/images/program/4.png',
+        certificate: '/images/certificates/pcllie.jpeg',
+        status: 'Live',
+        applicationDeadline: '31st December, 2026',
+        directors: [
+            { name: 'Prof. Neeraj Sharma', designation: 'Visiting Professor, Delhi Technological University', image: '/images/faculty/neeraj.jpg' }
+        ],
+        faculty: [
+            { name: 'Mr. Nikhil Grewal', designation: 'Faculty & Technology Professional (B.Tech. NSUT, S&P Global, ex-Twilio, GYF Founding Member)', image: '/images/faculty/nikhil.png' },
+            { name: 'Ms. Gehna Sahni', designation: 'Faculty & Research Associate (M.A. AUD, B.A. DU, M&E Associate at Ikaai India Research, GYF Founding Member)', image: '/images/faculty/gehna.png' }
+        ],
+        mentors: [
+            { name: 'Shri Raj Kamal Julka', designation: 'Distinguished Mentor, Practitioner & Scholar of Indian Knowledge Systems (M.Sc. Physics)', image: '/images/faculty/raj.png' },
+            { name: 'Shri Jitendra Malik', designation: 'Distinguished Mentor, Author & Scholar of IKS (M.Tech. IIT BHU, Author of "Happiness Unlimited")', image: '/images/faculty/jitendra.png' }
+        ],
+        highlights: [
+            'Certificate from DTU, an Institute of Eminence',
+            'Interdisciplinary blend of Ancient Indian Wisdom & Modern Science',
+            'Practical tools for stress resilience, digital detox & mental well-being',
+            'Insights from Bhagavad Gita, Deep Work & Attitude Is Everything',
+            'Learn from experienced faculty, corporate leaders, and IKS scholars',
+            'DTU Alumni (Digital Education) status & lifelong network access'
+        ],
+        schedule: {
+            totalHours: 72,
+            liveHours: 72,
+            timing: 'Saturday, 10:00 AM - 01:10 PM IST (Session 1: 10:00 AM - 11:30 AM, Session 2: 11:40 AM - 01:10 PM)'
+        },
+        eligibility: "For Indian Participants: Graduates (10+2+3) or Diploma Holders (10+2+3) or Postgraduates from a recognized university/institution in any discipline. For International Participants: Graduates or holders of an equivalent degree from a recognized university. For Working Professionals: Working professionals up to 28 years of age with a minimum of 1 year of work experience.",
+        targetAudience: [
+            'Students from any discipline (UG/PG)',
+            'Young professionals seeking career clarity & balance',
+            'Startup founders & Entrepreneurs',
+            'Corporate executives & Educators',
+            'Competitive Exam aspirants',
+            'Individuals seeking personal transformation and inner resilience'
+        ],
+        objectives: [
+            'Self-awareness and reflective thinking.',
+            'Emotional resilience in the face of uncertainty.',
+            'Clarity in decision-making.',
+            'Better stress and complexity management.',
+            'Alignment between personal values and professional aspirations.',
+            'A greater sense of purpose and balanced living.'
+        ],
+        keyLearningOutcomes: [
+            'Understand the gap between expectations and reality, and learn to overcome anxiety and discontent.',
+            'Cultivate grounded optimism through practical action.',
+            'Create a clear roadmap for achieving higher goals.',
+            'Build resilience through tolerance, discipline, consistency, and faith.',
+            'Develop an inner strength to withstand life\'s challenges.',
+            'Connect with fellow Vedic practitioners for learning, growth, and support.'
+        ],
+        needForProgram: [
+            'Nearly 70% of college students report moderate to high anxiety, and ~60% show symptoms of depression (Asian Journal of Psychiatry).',
+            'Indian young adults rank 60th in an 84-nation mental health study with an MHQ of 33/200 (Sapien Labs, US; March 2026).',
+            'Breakdown of traditional support networks due to rapid urbanization leading to loneliness (Intl Journal of Indian Psychology, 2025).',
+            'Social media comparison culture and academic stress contributing significantly to youth anxiety and depression.',
+            'Bridging the missing link between knowledge and action through timeless principles from Bhagavad Gita, Deep Work, and Attitude Is Everything.'
+        ],
+        modules: [
+            {
+                title: 'MODULE 1 | Ancient Indian Sustainable Practices (AISP)',
+                topics: [
+                    'Ancient Indian Agricultural Practices: Crop rotation, organic agriculture, water management systems, indigenous seed preservation, and community irrigation.',
+                    'Ancient Indian Health Practices: Ayurveda (herbal medicine, Panchakarma, daily routines) and Yoga as complementary systems of holistic well-being.',
+                    'Ancient Indian Educational Practices: Gurukul system and ancient centers of learning like Takshashila and Nalanda integrating intellectual rigor with moral and spiritual development.',
+                    'Ancient Indian Environmental Practices: Sacred groves (Devrai), zero-waste living, rainwater harvesting, and eco-friendly architecture (Vaastu Shastra).',
+                    'Ancient Indian Well-being Practices: Daily/seasonal wellness routines, meditation, pranayama, mindful eating, and natural living.'
+                ],
+                outcome: 'Understand ancient sustainable practices across agriculture, health, education, environment, and holistic daily well-being.'
+            },
+            {
+                title: 'MODULE 2 | The Deconditioned Self',
+                topics: [
+                    'Mapping the Mind and Society: Understanding how identity is shaped by social/psychological conditioning, socializing agents, media narratives, and social trends.',
+                    'Deconditioning and Re-examining the Self: Reflective practices to question conditioned thought patterns, evaluate beliefs critically, and develop conscious, self-determined perspectives.'
+                ],
+                outcome: 'Develop critical reflection to decondition unexamined mental habits and cultivate self-mastery.'
+            },
+            {
+                title: 'MODULE 3 | Foundation and Applications of IKS',
+                topics: [
+                    'Introduction to Indian Knowledge Systems: Definition, framework, scope, typologies of Vedas, Upanishads, Puranas, and Itihaas.',
+                    'Applications of IKS in Science & Technology: Connecting modern physical/biological sciences with traditional scientific perspectives and sustainable innovations.'
+                ],
+                outcome: 'Gain foundational knowledge of IKS texts and appreciate their modern scientific and technological applications.'
+            },
+            {
+                title: 'MODULE 4 | Spirituality, Religion, Dharma, and Karma: Concepts & Contemporary Relevance',
+                topics: [
+                    'Essence of Spirituality, Religion, and Duty (Dharma): Core concepts, misconceptions, interconnectedness, and impact on decision-making and purpose.',
+                    'The Principles of Karma: Karma as a universal law of cause and effect, guiding ethical conduct, accountability, and conscious living.'
+                ],
+                outcome: 'Clarity on spiritual concepts, Dharma, and applying Karma awareness for personal responsibility.'
+            },
+            {
+                title: 'MODULE 5 | Bhagavad Gita: Purpose & Relevance',
+                topics: [
+                    'Bhagavad Gita Beyond Myths & Realities: Philosophical and practical dimensions as a guide for self-reflection, ethical action, and spiritual insight.',
+                    'Purpose of Shrimad Bhagavad Gita — Resolving the Root Cause: Overcoming inner conflict, delusion, and human suffering through balance and integrity.'
+                ],
+                outcome: 'Understand the Bhagavad Gita as a practical framework for resolving inner conflict and achieving clarity.'
+            },
+            {
+                title: 'MODULE 6 | Practical Applications of Shrimad Bhagavad Gita',
+                topics: [
+                    'Cultivating Positive Thinking & Managing Stress: Practical approaches from IKS to reframe adversity and build resilience.',
+                    'Power of Tolerance: Emotional regulation, focus, and patient leadership in high-stress environments.',
+                    'Communication with Clarity & Compassion: Balancing reason and empathy inspired by IKS.',
+                    'Leadership Lessons from IKS: Vision, responsibility, authentic leadership, and empowering others.',
+                    'Developing a Higher Taste: Moving beyond mundane desires to higher purpose as taught in the Gita.',
+                    'Turning the Impossible into Possible: Transcending self-imposed limitations through abhyasa (practice), discipline, and devotion.',
+                    'Dealing with Failure — Therapeutic Techniques: Reinterpreting setbacks as pathways to self-discovery and perseverance.',
+                    'Life Management: Interdisciplinary study of balanced lifestyle choices (eating, sleeping, working) for physical, mental, and spiritual harmony.'
+                ],
+                outcome: 'Apply practical life management tools from the Bhagavad Gita to daily personal and professional challenges.'
+            }
+        ],
+        pedagogy: "This curriculum is designed to incorporate a blend of lectures, case studies, guest speakers, group discussions, and practical exercises to ensure a well-rounded understanding of life-management skills in the context of a complex and interconnected world. Additionally, the program provides opportunities for networking and peer learning among participants.",
+        launchSchedule: {
+            academicOrientation: 'January 2027',
+            classStart: 'January 2027',
+            completionDate: 'June 2027'
+        },
+        feeStructure: {
+            applicationFee: { label: 'Application Fee', amount: 'INR 1,000 + GST' },
+            programFee: { label: 'Program Fee', amount: 'INR 18,500 + GST' },
+            totalFee: { label: 'Total Program Fee', amount: 'INR 18,500 + GST' }
+        },
+        installments: [
+            { installment: 'Registration Amount', dueDate: 'Within 7–10 days of receiving offer letter', amount: 'INR 6,000 + GST' },
+            { installment: 'Instalment 1', dueDate: 'In the Second Month of the program start', amount: 'INR 4,500 + GST' },
+            { installment: 'Instalment 2', dueDate: 'In the Fourth Month of the program start', amount: 'INR 4,000 + GST' },
+            { installment: 'Instalment 3', dueDate: 'In the Fifth Month of the program start', amount: 'INR 4,000 + GST' }
+        ],
+        certification: {
+            description: [
+                'Issued by Delhi Technological University (DTU, New Delhi)',
+                'Certificate of Completion: For learners completing the program and satisfying evaluation and attendance criteria',
+                'Certificate of Participation: For learners satisfying attendance criteria (min 75%)',
+                'DTU Alumni (Digital Education) Status & Lifelong Network Access granted to eligible participants'
+            ],
+            issuedBy: 'Delhi Technological University (DTU, New Delhi)'
+        },
+        evaluation: {
+            description: 'The evaluation methodology is at the discretion of the faculty. It may include online examinations, case analyses, class participation, and other components as decided by the respective course faculty.',
+            attendance: 'A minimum attendance of 75% is a prerequisite for the successful completion of this program.',
+            projects: 'The program may require participants to work on individual or group assignments and/or projects to apply conceptual learning to real-world decision-making scenarios.',
+            passingCriteria: 'Participants who successfully complete the program and satisfy the requisite attendance criteria will be awarded a Certificate of Completion. Participants who are unable to meet evaluation requirements but satisfy attendance criteria will be awarded a Certificate of Participation.'
+        },
+        alumniBenefits: [
+            'Prestige associated with being recognized as a DTU Alumni (Digital Education) member.',
+            'Lifelong access to the DTU Alumni (Digital Education) network and portal for ongoing collaboration.',
+            'Batch-wise display of participants\' names on the DTU Digital Education portal (CTEL-DTU).',
+            'Opportunity to participate in the Annual Symposium organized by the Digital Education Department of DTU.',
+            'Appropriate fee discounts for additional Open and Online Programs offered by Delhi Technological University.',
+            'Group discounts for referred participants through DTU Alumni (Digital Education) members.',
+            'Sharing career milestones, live projects, and job opportunities within an experienced professional community.',
+            'Access to DTU Digital Education newsletters, DTU Times, podcasts, articles, and videos.',
+            'Invitations to exclusive online and offline events, masterclasses, and conferences.',
+            'Opportunity to serve as Guest Speaker at DTU Digital Education events.',
+            'Affiliate library access at DTU Main Campus in Rohini (with prior approval).'
+        ],
+        refundPolicy: [
+            'All payments are to be made in favour of Delhi Technological University (DTU).',
+            'All fees, including the application fee, are non-refundable.',
+            'GST is currently applicable at 18%. Any additional payment arising due to changes in applicable government taxes during the tenure of the programme shall be borne by the participants.',
+            'All dates and schedules are subject to change as per university requirements.'
+        ],
+        importantPoints: [
+            'Program schedule: Saturdays (10:00 AM to 01:10 PM IST)',
+            'Program duration: January 2027 to June 2027 (6 Months)',
+            'Delivered in interactive online mode with direct faculty interaction',
+            'Access to study materials, guest lectures, and mentor guidance',
+            'DTU Alumni (Digital Education) status conferred upon successful completion'
+        ]
+    },
+    {
         id: 'advanced-certificate-program-in-artificial-intelligence',
         enroll: 'https://saarthi.dtu.ac.in/ctel/ctel_apai/sourceCode/',
         enquireLink: 'https://timespro.com/executive-education/dtu-advanced-certificate-program-in-artificial-intelligence?utm_source=Institute&utm_campaign=DTU_ACPAI_01_Institute_P-01880',
@@ -8,6 +205,7 @@ export const programmes = [
         subtitle: 'Master AI fundamentals and advanced techniques',
         description: 'A comprehensive programme on machine learning, deep learning, and AI applications for industry professionals.',
         duration: '6 Months',
+        admissionStatus: 'Admissions Open',
         batch: 'Batch 01',
         mode: 'Online + 1-day Campus',
         cost: 'INR 1,10,000 + GST',
@@ -21,7 +219,7 @@ export const programmes = [
         applicationDeadline: '30th May, 2026',
         directors: [
             { name: 'Prof. S Indu', designation: 'Dean – Digital Education, Delhi Technological University', image: "/images/faculty/indu.jpg" },
-            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.png" }
+            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.jpg" }
 
         ],
         faculty: [
@@ -221,6 +419,7 @@ export const programmes = [
         subtitle: 'Strategic leadership for sustainable business transformation',
         description: 'Build ESG-compliant business models, learn from industry leaders, and drive sustainable business transformation.',
         duration: '6 Months',
+        admissionStatus: 'Admissions Closed',
         batch: 'Batch 01',
         mode: 'Online + 3-day Campus',
         cost: 'INR 1,60,000 + GST',
@@ -228,13 +427,13 @@ export const programmes = [
         provider: 'Unified Collaboration Services LLP (VCNow)',
         serviceProvider: 'Unified Collaboration Services LLP (VCNow)',
         category: 'certificate',
-        image: '/images/program/3.png',
+        image: '/images/program/2.png',
         certificate: '/images/certificates/csr.jpeg',
         status: 'Live',
         applicationDeadline: '22nd July, 2026',
         directors: [
             { name: 'Prof. Amit Mookerjee', designation: 'USME, Delhi Technological University', image: "/images/faculty/amit.jpg" },
-            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.png" }
+            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: "/images/faculty/neeraj.jpg" }
         ],
         programfaculty: [
             'Dr. Amandeep Kaur, Faculty member USME , DTU',
@@ -385,6 +584,7 @@ export const programmes = [
         subtitle: 'Strategic energy management and sustainable leadership for the future',
         description: 'Learn renewable energy technologies, sustainable energy management, and policy frameworks for a greener future.',
         duration: '6 Months',
+        admissionStatus: 'Admissions Closed',
         batch: 'Batch 01',
         mode: 'Online + 3-day Campus',
         cost: 'INR 1,60,000 + GST',
@@ -392,13 +592,13 @@ export const programmes = [
         provider: 'Unified Collaboration Services LLP (VCNow)',
         serviceProvider: 'Unified Collaboration Services LLP (VCNow)',
         category: 'certificate',
-        image: '/images/program/2.png',
+        image: '/images/program/3.png',
         certificate: '/images/certificates/aprse.jpeg',
         status: 'Live',
         applicationDeadline: '15th July, 2026',
         directors: [
             { name: 'Prof. M. Rizwan', designation: 'Department of Electrical Engineering, DTU', image: '/images/faculty/rizwan.jpg' },
-            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: '/images/faculty/neeraj.png' }
+            { name: 'Prof. Neeraj Sharma', designation: 'Adjunct Professor, Delhi Technological University', image: '/images/faculty/neeraj.jpg' }
         ],
         programfaculty: [
             'Prof. Bhim Singh, IIT Delhi (IITD); Power Electronics, Power Quality, Renewable Energy Systems',
